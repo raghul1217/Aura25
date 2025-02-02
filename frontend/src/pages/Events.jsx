@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import EventCard from '../components/EventCard';
 import '../styles/eventcard.css';
 
 const Events = () => {
@@ -24,40 +23,65 @@ const Events = () => {
     });
   }, []);
 
-  const events = [
-    { id: 1, icon: 'fa-code', heading: 'WEBSTRONAUTS', description: 'Create stunning websites in this hands-on competition. Let your creativity shine through design!' , cardColor: '#FF5733' },
-    { id: 2, icon: 'fa-laptop-code', heading: 'COSMO CODE', description: 'A fast-paced coding competition that tests programmers problem-solving skills and precision' , cardColor: '#33FF57' },
-    { id: 3, icon: 'fas fa-file-code', heading: 'GNIDOC', description: 'Decode the mystery! Reverse-engineer solutions, demonstrate your analytical prowess.' , cardColor: '#3357FF' },
-    { id: 4, icon: 'fas fa-lightbulb', heading: 'GALACTIC HACKSPRINT', description: 'Present innovative solutions to real-world problems. Inspire and engage with your ideas!' , cardColor: '#FF33A8' },
-    { id: 5, icon: 'fas fa-robot', heading: 'PROMPT PARADOX', description: 'Generate prompts to match provided visuals in this creative challenge by using AI Tools!' , cardColor: '#FFC300' },
-    { id: 6, icon: 'fa-running', heading: 'UNIVERSAL HUNT', description: 'Embark on an exhilarating scavenger hunt. Solve clues and race to the finish!' , cardColor: '#DAF7A6' },
-    { id: 7, icon: 'fas fa-brain', heading: 'GALACTIC TALES', description: 'Craft captivating stories using given words. Let your imagination run wild in this creative challenge!' , cardColor: '#C70039' },
-    { id: 8, icon: 'fas fa-question-circle', heading: 'QUIZSPAC', description: 'Test your knowledge in a fun, fast-paced quiz! Compete against peers for ultimate bragging rights.' , cardColor: '#900C3F' }
+  const eventsData = [
+    {
+      category: "Single Events",
+      events: [
+        { title: "Event 1", content: "Description 1", logo: "logo1.png" },
+        { title: "Event 2", content: "Description 2", logo: "logo2.png" },
+        { title: "Event 3", content: "Description 3", logo: "logo3.png" },
+        { title: "Event 4", content: "Description 4", logo: "logo4.png" },
+        { title: "Event 5", content: "Description 5", logo: "logo5.png" },
+        { title: "Event 6", content: "Description 6", logo: "logo6.png" }
+      ]
+    },
+    {
+      category: "Duo Events",
+      events: [
+        { title: "Event 7", content: "Description 7", logo: "logo7.png" },
+        { title: "Event 8", content: "Description 8", logo: "logo8.png" },
+        { title: "Event 9", content: "Description 9", logo: "logo9.png" },
+        { title: "Event 10", content: "Description 10", logo: "logo10.png" },
+        { title: "Event 11", content: "Description 11", logo: "logo11.png" },
+        { title: "Event 12", content: "Description 12", logo: "logo12.png" }
+      ]
+    },
+    {
+      category: "Group Events",
+      events: [
+        { title: "Event 13", content: "Description 13", logo: "logo13.png" },
+        { title: "Event 14", content: "Description 14", logo: "logo14.png" },
+        { title: "Event 15", content: "Description 15", logo: "logo15.png" },
+        { title: "Event 16", content: "Description 16", logo: "logo16.png" },
+        { title: "Event 17", content: "Description 17", logo: "logo17.png" },
+        { title: "Event 18", content: "Description 18", logo: "logo18.png" }
+      ]
+    }
   ];
 
-  const techEvents = events.filter(event => event.id <= 4);
-  const nonTechEvents = events.filter(event => event.id > 4);
-
   return (
-    <div className="events-wrapper" id='events'>
-      {/* <h1 className="main-heading">Upcoming Events</h1> */}
-      <div className="event-section">
-        <div className="eventpage2-head special-head"><h2 className="event-type-heading" id="techevent">Tech Events</h2></div>
-        <div className="events-container">
-          {techEvents.map((event) => (
-            <EventCard key={event.id} {...event} uniqueId={`tech-event-${event.id}`} />
-          ))}
+    <div className="events-container" id='events'>
+      <div className="parent">
+      {eventsData.map((categoryData, index) => (
+        <div key={index} className='event-cont'>
+          <h2>{categoryData.category}</h2>
+          <div className="events-container">
+            {categoryData.events.map((event, idx) => (
+              <div className="card" key={idx}>
+                <div className="content-box">
+                  <span className="card-title">{event.title}</span>
+                  <p className="card-content">{event.content}</p>
+                  <span className="see-more">See More</span>
+                </div>
+                <div className="date-box">
+                  <img src={event.logo} alt="Event Logo" className="event-logo" />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-
-      <div className="event-section">
-        <div className="eventpage2-head"><h2 className="event-type-heading">Non-Tech Events</h2></div>
-        <div className="events-container">
-          {nonTechEvents.map((event) => (
-            <EventCard key={event.id} {...event} uniqueId={`non-tech-event-${event.id}`} />
-          ))}
-        </div>
-      </div>
+      ))}
+    </div>
       
    </div>
   );
