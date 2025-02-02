@@ -2,10 +2,10 @@ import React from "react";
 import "../styles/clubs.css";
 import music from '../assets/musicclub.jpg'
 import dance from '../assets/danceclub.jpg'
-import film from '../assets/filmclub.jpg'
-import arts from '../assets/artsclub.jpg'
-import tamil from '../assets/tamilclub.jpg'
-import english from '../assets/englishclub.jpg'
+import film from '../assets/film.png'
+import arts from '../assets/arts.png'
+import tamil from '../assets/tamil.png'
+import english from '../assets/english.png'
 
 // Club data
 const clubsData = [
