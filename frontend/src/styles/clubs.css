@@ -10,7 +10,7 @@ body{
 }
 
 .clubs-head{
-    color: var(--primary);
+    color: var(--background);
     font-family: Montserrat;
     font-weight: 500;
     font-size: 30px;
@@ -89,11 +89,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* font-family: "Playwrite CU", serif; */
+    font-family: "Playwrite AU SA", serif;
   }
   
   /* Hover effect - open cover */
   .book:hover .cover {
     transform: rotateY(-80deg);
+  }
+
+  .clubs-container .book:nth-child(3) .club-logo { /* 1st club */
+    width: 200px;
+    height: auto;
+    margin-top: -70px;
+  }
+
+  .clubs-container .book:nth-child(3) .club-name{
+    margin-top: -70px;
   }
   
   /* Responsive Design */
