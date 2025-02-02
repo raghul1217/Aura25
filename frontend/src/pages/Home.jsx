@@ -157,9 +157,9 @@ const Home = () => {
           </div>
         </div>
       )}
-
+      <Clubs />
       <Events />
-      <Clubs/>
+
       <Footer />
     </>
   );

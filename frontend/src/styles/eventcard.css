@@ -1,7 +1,7 @@
 .events-container {
   width: 100%;
   padding: 20px;
-  background-color: rgb(196, 196, 196);
+  background-color: var(--background);
 }
 
 .event-category {
