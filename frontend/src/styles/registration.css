@@ -1,0 +1,276 @@
+.register-navbar {
+    background-color: var(--background);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 90px;
+    padding: 20px 0px;
+    margin-bottom: 40px;
+}
+
+.registration-form-wrapper {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--background);
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--white-color);
+    margin: 50px 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+    
+}
+
+.registration-heading {
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.registration-form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.registration__icon {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: var(--text);
+    font-size: 1.25rem;
+}
+
+.registration__box-input {
+    position: relative;
+    width: 100%;
+    padding-left: 2.5rem;
+    background-color: transparent;
+    border-bottom: 1px solid var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.registration__input {
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: transparent;
+    color: var(--text);
+    font-size: 1rem;
+    border: none;
+}
+
+.registration__input:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+.registration__label {
+    position: absolute;
+    left: 2.5rem;
+    top: 13px;
+    font-size: 1rem;
+    color: var(--text);
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.registration__input:focus + .registration__label,
+.registration__input:not(:placeholder-shown) + .registration__label {
+    top: -12px;
+    font-size: 0.85rem;
+}
+
+.registration-button {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login__register{
+    margin-top: 5px;
+    color: var(--text);
+}
+
+.login__register .lgn{
+    color: var(--text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .registration-form-wrapper {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-form-wrapper {
+        padding: 1.5rem;
+        margin-bottom: 200px;
+        margin-top: 130px;
+    }
+    .registration-container{
+        margin-top: 120px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .registration__icon{
+        font-size: 16px;
+    }
+    .registration__label{
+        font-size: 16px;
+    }
+}
+
+
+/* General Toastify styles for all devices */
+.toastify-container {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed !important; /* Ensure it's fixed */
+    top: 20px !important; /* Adjust to top-right */
+    right: 20px !important; /* Adjust to top-right */
+    z-index: 9999;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Success and error styles */
+.toastify-container .Toastify__toast--success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.toastify-container .Toastify__toast--error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.toastify-container .Toastify__toast-body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Smaller Toastify size for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .toastify-container {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+        max-width: 280px;
+        border-radius: 6px;
+        top: 10px; /* Adjust for smaller screens */
+        right: 10px; /* Adjust for smaller screens */
+    }
+    
+    .toastify-container .Toastify__toast-body {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Even smaller Toastify size for very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .toastify-container {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        max-width: 240px;
+        border-radius: 5px;
+        top: 5px; /* Further adjust for very small screens */
+        right: 5px; /* Further adjust for very small screens */
+    }
+    
+    .toastify-container .Toastify__toast-body {
+        font-size: 0.8rem;
+    }
+}
+
+body {
+    margin: 0;
+  }
+  
+  #rotating-section {
+    position: relative;
+    background: #FF7E00 top center no-repeat fixed;
+    height: 120vh;
+    overflow: hidden;
+  }
+
+  #rotating-section2 {
+    position: relative;
+    background: #FF7E00 top center no-repeat fixed;
+    height: 150vh;
+    overflow: hidden;
+  }
+  
+  .icon {
+    position: absolute;
+    font-size: 70px; /* Increased size */
+    color: white;
+    bottom: -150px;
+    animation: floating 10s linear infinite; /* Slower, smoother movement */
+  }
+  
+  /* Positioning for even spacing & full coverage */
+  .icon1 { left: 2%; animation-delay: 0s; }
+  .icon2 { left: 12%; animation-delay: 1s; }
+  .icon3 { left: 22%; animation-delay: 2s; }
+  .icon4 { left: 32%; animation-delay: 3s; }
+  .icon5 { left: 42%; animation-delay: 4s; }
+  .icon6 { left: 52%; animation-delay: 5s; }
+  .icon7 { left: 62%; animation-delay: 6s; }
+  .icon8 { left: 72%; animation-delay: 2.5s; }
+  .icon9 { left: 82%; animation-delay: 3.5s; }
+  .icon10 { left: 92%; animation-delay: 1.8s; }
+  
+  .icon11 { left: 5%; animation-delay: 2.3s; }
+  .icon12 { left: 15%; animation-delay: 3.1s; }
+  .icon13 { left: 25%; animation-delay: 0.9s; }
+  .icon14 { left: 35%; animation-delay: 4.2s; }
+  .icon15 { left: 45%; animation-delay: 1.6s; }
+  .icon16 { left: 55%; animation-delay: 2.9s; }
+  .icon17 { left: 65%; animation-delay: 3.8s; }
+  .icon18 { left: 75%; animation-delay: 1.4s; }
+  .icon19 { left: 85%; animation-delay: 2.6s; }
+  .icon20 { left: 95%; animation-delay: 3.3s; }
+  
+  .icon21 { left: 8%; animation-delay: 1.2s; }
+  .icon22 { left: 18%; animation-delay: 3.5s; }
+  .icon23 { left: 28%; animation-delay: 4.1s; }
+  .icon24 { left: 38%; animation-delay: 2.2s; }
+  .icon25 { left: 48%; animation-delay: 5.3s; }
+  .icon26 { left: 58%; animation-delay: 3.6s; }
+  .icon27 { left: 68%; animation-delay: 2.1s; }
+  .icon28 { left: 78%; animation-delay: 4.7s; }
+
+  /* Hide extra icons on mobile */
+@media (max-width: 768px) {
+    .icon:nth-child(n+12) { display: none; } /* Hides icons 12+ */
+  }
+  
+  @keyframes floating {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-140vh) rotate(360deg); opacity: 0; }
+  }
+  

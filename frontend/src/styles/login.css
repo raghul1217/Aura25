@@ -1,0 +1,320 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&display=swap');
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  color: var(--text);
+}
+
+body,
+input,
+button {
+  font-size: var(--normal-font-size);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+
+.login-navbar{
+  background: var(--background);
+  background-position: center;
+  background-size: cover;
+}
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.login__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.login__form {
+  position: relative;
+  background-color: var(--background);
+  /* border: 2px solid var(--white-color); */
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+}
+.login__title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+.login__content, .login__box {
+  display: grid;
+}
+.login__content {
+  row-gap: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.login__box {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 0.75rem;
+  border-bottom: 2px solid var(--text);
+}
+.login__icon, .login__eye {
+  font-size: 1.25rem;
+}
+.login__input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background-color: transparent;
+  color: var(--text);
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+.login__input:focus {
+    background-color: transparent !important; /* Removes white background on focus */
+}
+.login__input:not(:placeholder-shown) {
+    background-color: transparent !important; /* Ensures background stays transparent when input is filled */
+}
+/* Override autofill background and shadow */
+input:-webkit-autofill {
+    background-color: transparent !important; /* Transparent background */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Remove autofill shadow */
+    -webkit-text-fill-color: var(--text) !important; /* Ensure text stays white */
+    transition: background-color 5000s ease-in-out 0s; /* Prevent the background from flashing white */
+}
+
+input:-moz-autofill {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -moz-text-fill-color: var(--text) !important;
+}
+.login__box-input {
+  position: relative;
+  background-color: transparent;
+}
+.login__label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: var(--font-medium);
+  transition: top 0.3s, font-size 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+.login__eye {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 10;
+  cursor: pointer;
+}
+.login__box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+.login__check, .login__check-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login__check {
+  margin-bottom: 1.5rem;
+}
+.login__check-label, .login__forgot {
+  font-size: var(--small-font-size);
+  font-family: 'Montserrat', sans-serif;
+}
+.login__register{
+  font-size: 16px;
+}
+.login__check-group {
+  column-gap: 0.5rem;
+}
+.login__check-input {
+  width: 16px;
+  height: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.login__forgot {
+  color: var(--text);
+}
+.login__forgot:hover {
+  text-decoration: underline;
+}
+.login__button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 0.5rem;
+  background-color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+.login__register {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.login__register a {
+  color: var(--text);
+  font-weight: var(--font-medium);
+}
+.login__register a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus move up label */
+.login__input:focus + .login__label {
+  top: -12px;
+  font-size: var(--small-font-size);
+}
+
+/* Input focus sticky top label */
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+  top: -12px;
+  font-size: var(--small-font-size);
+}
+.login-btn-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+    background-size: contain;
+  }
+  .login__form {
+    width: 432px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+  .login__title {
+    font-size: 2rem;
+  }
+  
+}
+
+/* General Toastify styles for all devices */
+.toastify-container {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 9999; /* Ensure it stays above other elements */
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Success and error styles */
+.toastify-container .Toastify__toast--success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.toastify-container .Toastify__toast--error {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.toastify-container .Toastify__toast-body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Smaller Toastify size for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .toastify-container {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    max-width: 280px;
+    border-radius: 6px;
+    top: 10px; /* Adjust for smaller screens */
+    right: 10px; /* Adjust for smaller screens */
+}
+
+.toastify-container .Toastify__toast-body {
+    font-size: 0.85rem;
+}
+}
+
+/* Even smaller Toastify size for very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .toastify-container {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    max-width: 240px;
+    border-radius: 5px;
+    top: 5px; /* Further adjust for very small screens */
+    right: 5px; /* Further adjust for very small screens */
+}
+
+.toastify-container .Toastify__toast-body {
+    font-size: 0.8rem;
+}
+
+    .login__icon{
+        font-size: 14px;
+      }
+
+      .login__label{
+        font-size: 16px;
+      }
+}
+

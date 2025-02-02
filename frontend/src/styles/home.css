@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root{
+    --primary: #FF7E00;
+    --secondary: #000;
+    --background: #fefefe;
+}
+
+@font-face {
+    font-family: 'AlphaCentauri';
+    src: url('./assets/planetfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.home-bg {
+    background: var(--background);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Use min-height to allow content to dictate height */
+    display: flex;
+    flex-direction: column; /* Ensure vertical layout on mobile */
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 30px;
+    min-height: 80vh;
+    margin-top: 75px; /* Ensure it grows with content */
+}
+
+.home-container .home-content1 h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    font-weight: 900;
+    color: #FF7E00;
+}
+
+#home-head{
+    color: var(--primary);
+}
+
+/* Reduced Text Glow */
+.brand-main {
+    font-family: 'AlphaCentauri', sans-serif;
+    font-size: 55px;
+    color: var(--secondary);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+
+.brand-main .number { /* Purple-pink color */
+    font-size: 47px;
+    font-weight: bold;
+    font-family: "montserrat", sans-serif;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  
+
+.home-container .home-content1 img {
+    width: 150px;
+    height: 160px;
+}
+
+.home-content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+    gap: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: var(--secondary);
+}
+
+.home-content1 h1{
+    padding-top: 0px;
+    margin-top: 0px;
+    color: var(--primary);
+}
+
+.home-content1 p {
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;  
+  width: 93%;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.home-date-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: var(--secondary);
+}
+
+.home-date{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+}
+
+.s-home-date{
+    font-size: 25px;
+}
+
+.cash-h{
+font-family: "space mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;  
+  text-align: center;
+}
+
+
+.reg-h{
+    font-family: "Space Grotesk", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 30px;  
+          width: 80%;
+          text-align: center;
+}
+
+.home-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0 100px;
+}
+
+/* Keyframes for floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-35px); /* Float upwards */
+    }
+    100% {
+        transform: translateY(0px); /* Float back down */
+    }
+}
+
+/* Home Content 2 Styles */
+.home-content2 img {
+    width: 500px;
+    height: 450px;
+    animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+}
+
+.home-content2 h4 {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.home-btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-family: 'AlphaCentauri';
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home-btn a{
+    margin-bottom: 10px;
+}
+
+/* Neon glow effect for the register button */
+/* Updated Space-themed Button */
+.register-btn {
+    background-color: transparent;
+    color: white;
+    font-family: 'AlphaCentauri';
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    outline: none;
+    border-radius: 5px;
+    padding: 7px 25px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    color: white;
+    background: linear-gradient(0deg, rgb(255,126,0) 0%, rgb(247, 120, 10) 100%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.4);
+}
+
+.register-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent 60%);
+    transform: rotate(45deg);
+    z-index: -1;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-20px) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.5;
+    }
+}
+
+.register-btn:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8);
+}
+
+/* Particle animation effect */
+.register-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.register-btn:hover::after {
+    opacity: 1;
+}
+
+#neon-btn {
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+.login-btn {
+    border: 2px solid white;
+    outline: none;
+    border-radius: 2px;
+    padding: 4px 40px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .home-bg {
+        min-height: auto; /* Allow content to dictate height */
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse; /* Stack elements vertically */
+        padding: 20px 10px; /* Reduce padding */
+        min-height: 100vh;
+        margin-top: 60px; /* Allow content to fill screen */
+    }
+
+    .home-content1{
+        gap: 5px;
+    }
+
+    #home-head{
+        color: var(--primary);
+    }
+
+    .home-container .home-content1 img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .home-container .home-content1 h1 {
+        text-align: center;
+        font-size: 25px;
+        font-family: "AlphaCentauri" ,"Eudoxus Sans", sans-serif;
+        font-weight: 800;
+        margin-top: -30px;
+    }
+
+    .home-container .home-content1 p{
+        font-size: 13px;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .cash-h{
+        font-size: 16px;
+    }
+
+    .brand-main{
+        font-size: 100px;
+    }
+
+    .brand-main .number{
+        font-size: 32px;
+    }
+
+    .home-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .register-btn{
+        border-radius: 3px;
+        padding: 5px 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+    .home-content2 {
+        padding: 10px;
+        padding-top: 10px; /* Reduce top padding */
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    .home-content2 img {
+        width: 200px; /* Reduce image size for mobile */
+        height: 200px;
+        animation: none;
+    }
+
+    
+
+    .home-date-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        font-size: 17px;
+    }
+
+    .home-date{
+        font-size: 17px;
+    }
+}
+
+
+
+body {
+    margin: 0;
+  }
+  
+  #rotating-section {
+    position: relative;
+    background: #e1e1e1 top center no-repeat fixed;
+    height: 120vh;
+    overflow: hidden;
+  }
+
+  #rotating-section1 {
+    position: relative;
+    background: #fefefe top center no-repeat fixed;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .icon1 {
+    position: absolute;
+    font-size: 70px; /* Increased size */
+    color: var(--primary);
+    bottom: -150px;
+    animation: floating 10s linear infinite; /* Slower, smoother movement */
+  }
+  
+  /* Positioning for even spacing & full coverage */
+  .icon1 { left: 2%; animation-delay: 0s; }
+  .icon2 { left: 12%; animation-delay: 1s; }
+  .icon3 { left: 22%; animation-delay: 2s; }
+  .icon4 { left: 32%; animation-delay: 3s; }
+  .icon5 { left: 42%; animation-delay: 4s; }
+  .icon6 { left: 52%; animation-delay: 5s; }
+  .icon7 { left: 62%; animation-delay: 6s; }
+  .icon8 { left: 72%; animation-delay: 2.5s; }
+  .icon9 { left: 82%; animation-delay: 3.5s; }
+  .icon10 { left: 92%; animation-delay: 1.8s; }
+  
+  .icon11 { left: 5%; animation-delay: 2.3s; }
+  .icon12 { left: 15%; animation-delay: 3.1s; }
+  .icon13 { left: 25%; animation-delay: 0.9s; }
+  .icon14 { left: 35%; animation-delay: 4.2s; }
+  .icon15 { left: 45%; animation-delay: 1.6s; }
+  .icon16 { left: 55%; animation-delay: 2.9s; }
+  .icon17 { left: 65%; animation-delay: 3.8s; }
+  .icon18 { left: 75%; animation-delay: 1.4s; }
+  .icon19 { left: 85%; animation-delay: 2.6s; }
+  .icon20 { left: 95%; animation-delay: 3.3s; }
+  
+  .icon21 { left: 8%; animation-delay: 1.2s; }
+  .icon22 { left: 18%; animation-delay: 3.5s; }
+  .icon23 { left: 28%; animation-delay: 4.1s; }
+  .icon24 { left: 38%; animation-delay: 2.2s; }
+  .icon25 { left: 48%; animation-delay: 5.3s; }
+  .icon26 { left: 58%; animation-delay: 3.6s; }
+  .icon27 { left: 68%; animation-delay: 2.1s; }
+  .icon28 { left: 78%; animation-delay: 4.7s; }
+
+  /* Hide extra icons on mobile */
+@media (max-width: 768px) {
+    .icon:nth-child(n+12) { display: none; } /* Hides icons 12+ */
+  }
+  
+  @keyframes floating {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-140vh) rotate(360deg); opacity: 0; }
+  }
+  

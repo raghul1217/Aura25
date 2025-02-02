@@ -1,0 +1,237 @@
+/* General footer styles */
+.footer {
+  background: linear-gradient(180deg, #111132, #0c0c1d);
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+}
+
+/* Three columns for desktop */
+.left-side, .center-section, .right-side {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+/* Header titles with gradient underline */
+.left-side h4, .center-section h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.left-side h4::after, .center-section h4::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0px 50px;
+}
+
+.center-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact numbers and social icons alignment */
+.contact-numbers {
+  width: 85%;
+}
+
+.people-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.people-contact .align1 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex: 1;
+}
+
+.people-contact .align2 {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons-div {
+  background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+/* Quick Links styles */
+.center-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-section ul li {
+  margin: 4px 0;
+}
+
+.center-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.center-section ul li a:hover {
+  color: #eb12eb;
+}
+
+/* Contact Image and Map */
+.contact-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-image-container p {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.location-icon {
+  margin-right: 5px;
+  color: #dd10dd;
+  font-size: 25px;
+}
+
+.footer-gmap {
+  border: 2px solid #C0C0C0;
+  border-radius: 1px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-p {
+  font-size: 0.9em;
+}
+
+.footer-bottom hr {
+  border: none;
+  height: 1px;
+  background-color: #444;
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+
+  .left-side, .center-section, .right-side {
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .left-side{
+    width: 100%;
+    padding: 10px 25px;
+  }
+
+  .social-icons {
+    margin-bottom: 15px;
+  }
+
+  .footer-gmap {
+    width: 290px;
+    height: 150px;
+  }
+
+  .contact-image-container p {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .center-section {
+    margin-bottom: 5px;
+  }
+
+  .footer-p {
+    font-size: 16px;
+  }
+
+  .contact-numbers{
+    width: 100%;
+  }
+
+  .people-contact .align1{
+    flex: 2;
+  }
+
+  .people-contact .align2{
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 320px){
+    .left-side{
+      padding: 8px;
+      width: 90%;
+    }
+
+    .people-contact p{
+      font-size: 15px;
+    }
+}
