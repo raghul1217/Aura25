@@ -4,6 +4,7 @@
   color: #fff;
   padding: 20px 0;
   font-family: 'Montserrat', sans-serif;
+  font-family: "Playwrite AU SA", serif;
 }
 
 .footer-content {
@@ -31,6 +32,7 @@
   font-size: 1.5em;
   margin-bottom: 15px;
   position: relative;
+  font-family: "Playwrite CU", serif;
 }
 
 .left-side h4::after, .center-section h4::after {
@@ -51,12 +53,14 @@
   gap: 10px;
   width: 100%;
   padding: 0px 50px;
+  font-family: "Playwrite AU SA", serif;
 }
 
 .center-section{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Playwrite AU SA", serif;
 }
 
 /* Contact numbers and social icons alignment */
@@ -68,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
   margin: 8px 0;
 }
 
@@ -160,7 +164,7 @@
 }
 
 .footer-p {
-  font-size: 0.9em;
+  font-size: 12px;
 }
 
 .footer-p a{
@@ -205,15 +209,16 @@
 
   .contact-image-container p {
     width: 95%;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .center-section {
     margin-bottom: 5px;
+    font-size: 14px;
   }
 
   .footer-p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .contact-numbers{
@@ -230,7 +235,8 @@
   }
 
   .people-contact p{
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 300;
   }
 }
 

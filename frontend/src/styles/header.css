@@ -37,6 +37,8 @@
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
     transition: color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
+    font-family: "Playwrite CU", serif;
+    font-family: "Playwrite AU SA", serif;
 }
 
 .brand{
@@ -69,6 +71,7 @@
     position: relative; /* Needed for the pseudo-element positioning */
     transition: color 0.3s ease; /* Smooth color transition */
     font-family: 'Montserrat', sans-serif;
+    font-family: "Playwrite CU", serif;
 }
 
 .nav-links li a::after {

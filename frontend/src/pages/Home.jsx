@@ -115,7 +115,7 @@ const Home = () => {
                 <h3 className="home-date">March-01 & 02 2025</h3>
               </div>
               <p>
-                “AURA '25”, the most awaited intercollegiate fest conducted by
+                <span>“AURA '25”</span>, the most awaited intercollegiate fest conducted by
                 'Government College of Engineering, Salem', coordinated by the
                 exuberant clubs of ours is here reflecting it's aura like a
                 magnetic field attracting all the energetic crowds with lively

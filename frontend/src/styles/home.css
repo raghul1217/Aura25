@@ -99,6 +99,10 @@
   color: var(--secondary);
 }
 
+.home-content1 p span{
+    font-weight: 600;
+}
+
 .home-date-container{
     display: flex;
     flex-direction: row;

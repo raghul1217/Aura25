@@ -14,35 +14,35 @@ const Events = () => {
     {
       category: "Solo Events",
       events: [
-        { title: "Vocal Vibes", content: "Description 1", logo: music },
-        { title: "One Beat", content: "Description 2", logo: dance },
+        { title: "Vocal Vibes", content: "Solo performer showcasing vocal skills, expression, and stage presence, conveying emotions through their unique voice.", logo: music },
+        { title: "One Beat", content: "Single dancer showcasing skill, expression, and creativity, highlighting technique and storytelling.", logo: dance },
         { title: "Tamil Speech", content: "Description 3", logo: tamil },
-        { title: "Poem Writing", content: "Description 4", logo: english },
-        { title: "Monologue", content: "Description 5", logo: film },
-        { title: "Pencil Sketching", content: "Description 6", logo: arts }
+        { title: "Poem Writing", content: "Participants writing poems inspired by given pictures, showcasing creativity and emotional expression.", logo: english },
+        { title: "Monologue", content: "Solo performer delivering a character's emotions, thoughts, or story, showcasing acting skills and expression.", logo: film },
+        { title: "Pencil Sketching", content: "Artists creating lively black and white pictures using graphite pencils.", logo: arts }
       ]
     },
     {
       category: "Duo Events",
       events: [
-        { title: "Meloduet", content: "Description 7", logo: music },
-        { title: "Dynamic Duo", content: "Description 8", logo: dance },
+        { title: "Meloduet", content: "Two singers performing together, showcasing coordination, vocal blending, and emotional expression.", logo: music },
+        { title: "Dynamic Duo", content: "Two dancers performing together, highlighting coordination, chemistry, and synchronization.", logo: dance },
         { title: "Tamil Quiz", content: "Description 9", logo: tamil },
-        { title: "English Quiz", content: "Description 10", logo: english },
-        { title: "Face Painting", content: "Description 11", logo: arts },
+        { title: "English Quiz", content: " Competitors testing linguistic skills and knowledge, showcasing expertise and speed.", logo: english },
+        { title: "Face Painting", content: "Artists creating temporary, vibrant designs on participants' hands or faces.", logo: arts },
       ]
     },
     {
       category: "Group Events",
       events: [
-        { title: "Harmonyx", content: "Harmonyx is a musical gathering where singers perform together, fostering teamwork, creativity, and enjoyment through diverse genres in harmonious collaboration.", logo: music},
-        { title: "Synchronix", content: "Description 14", logo: dance },
+        { title: "Harmonyx", content: "Musical gathering featuring choirs, bands, or groups singing in harmony, fostering teamwork and creativity.", logo: music},
+        { title: "Synchronix", content: "Coordinated dance performance featuring multiple dancers, showcasing teamwork, rhythm, and creativity.", logo: dance },
         { title: "Veedhi Nadagam", content: "Description 15", logo: tamil },
         { title: "Villupaatu", content: "Description 16", logo: tamil },
-        { title: "Short Film", content: "Description 17", logo: film},
-        { title: "Scene Recreation", content: "Description 18", logo: film },
-        { title: "Adzap", content: "Description 18", logo: english },
-        { title: "Paper Dressing", content: "Description 18", logo: arts }
+        { title: "Short Film", content: "Creators producing impactful, engaging short films showcasing storytelling and visuals.", logo: film},
+        { title: "Scene Recreation", content: "Teams recreating iconic movie scenes, capturing emotions, cinematography, and essence.", logo: film },
+        { title: "Adzap", content: "Teams creating and acting out imaginative ads, testing creativity, teamwork, and quick thinking.", logo: english },
+        { title: "Paper Dressing", content: "Teams designing and creating stylish outfits using paper and minimal materials.", logo: arts }
       ]
     }
   ];

@@ -145,7 +145,6 @@ const Footer = () => {
             <li><Link to="/">Home</Link></li>
             <li><a href="#clubs" >Clubs</a></li>
             <li><a href="#events" >Events</a></li>
-            <li><a href="https://chat.whatsapp.com/https://chat.whatsapp.com/IqXPPqqLMKALwC6ptt0IPg" target="_blank" rel="noopener noreferrer">WhatsApp group</a></li>
             <li><a href="/rulebook.pdf" download>Rulebook</a></li>
           </ul>
         </div>
