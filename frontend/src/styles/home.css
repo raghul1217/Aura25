@@ -276,15 +276,11 @@ font-family: "space mono", sans-serif;
 /* Mobile view */
 @media (max-width: 768px) {
 
-    .home-bg {
-        min-height: auto; /* Allow content to dictate height */
-    }
-
     .home-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column-reverse; /* Stack elements vertically */
+        flex-direction: column; /* Stack elements vertically */
         padding: 20px 10px; /* Reduce padding */
         min-height: 100vh;
         margin-top: 60px; /* Allow content to fill screen */
