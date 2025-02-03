@@ -77,26 +77,11 @@ const Home = () => {
           <div id="rotating-animation">
             <div>
               {[
-                "fa-music",
-                "fa-headphones",
-                "fa-microphone",
-                "fa-drum",
-                "fa-guitar",
-                "fa-play",
-                "fa-headphones",
-                "fa-microphone",
-                "fa-volume-up",
-                "fa-podcast",
-                "fa-record-vinyl",
-                "fa-headset",
-                "fa-wave-square",
-                "fa-guitar",
-                "fa-drum",
-                "fa-play-circle",
-                "fa-music",
-                "fa-drum",
-                "fa-record-vinyl",
-                "fa-headphones",
+                "fa-music", "fa-headphones", "fa-microphone", "fa-drum",
+      "fa-guitar", "fa-music", "fa-play", "fa-headphones",
+      "fa-microphone", "fa-dance", "fa-volume-up", "fa-podcast",
+      "fa-record-vinyl", "fa-headset", "fa-wave-square", "fa-music",
+      "fa-guitar", "fa-drum", "fa-play-circle", "fa-microphone-alt"
               ].map((icon, index) => (
                 <i
                   key={index}
