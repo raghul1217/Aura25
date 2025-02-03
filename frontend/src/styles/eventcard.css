@@ -42,7 +42,7 @@ h2 {
   position: relative;
   border-radius: 50px;
   background: linear-gradient(135deg, #ffdd00 0%, #FF7E00 100%);
-  box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+  box-shadow: rgba(71, 41, 5, 0) 40px 50px 25px -40px, rgba(71, 50, 5, 0.2) 0px 25px 25px -5px;
   transition: all 0.5s ease-in-out;
 }
 

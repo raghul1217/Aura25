@@ -3,10 +3,10 @@ import ScrollReveal from 'scrollreveal';
 import '../styles/eventcard.css';
 import music from "../assets/musicclub.jpg";
 import dance from "../assets/danceclub.jpg";
-import film from "../assets/film.png";
-import arts from "../assets/arts.png";
+import film from "../assets/filmclub.jpg";
+import arts from "../assets/artsclub.jpg";
 import tamil from "../assets/tamil.png";
-import english from "../assets/english.png";
+import english from "../assets/english1.jpg";
 
 const Events = () => {
 
