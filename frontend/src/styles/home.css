@@ -375,6 +375,7 @@ font-family: "space mono", sans-serif;
     .home-date{
         font-size: 17px;
     }
+
 }
 
 
@@ -439,7 +440,7 @@ body {
 
   /* Hide extra icons on mobile */
 @media (max-width: 768px) {
-    .icon:nth-child(n+12) { display: none; } /* Hides icons 12+ */
+    .icon:nth-child(n+5) { display: none; } /* Hides icons 12+ */
   }
   
   @keyframes floating {
@@ -447,3 +448,12 @@ body {
     100% { transform: translateY(-140vh) rotate(360deg); opacity: 0; }
   }
   
+  @media (max-width: 768px){
+    .icon1 {
+        position: absolute;
+        font-size: 35px; /* Increased size */
+        color: var(--primary);
+        bottom: -150px;
+        animation: floating 10s linear infinite; /* Slower, smoother movement */
+      }
+  }
