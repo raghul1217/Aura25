@@ -126,8 +126,7 @@ const Home = () => {
                 <Link to="/register" id="neon-btn">
                   <button className="register-btn">REGISTER</button>
                 </Link>
-                <p>Online registration closed!</p>
-                <p>Onspot registration - ₹250/-</p>
+                <p>Event access per head - ₹250/-</p>
               </div>
             </div>
             <div className="home-content2">

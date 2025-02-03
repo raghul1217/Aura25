@@ -288,7 +288,7 @@ font-family: "space mono", sans-serif;
 
     .home-content1{
         gap: 5px;
-        margin-top: -35px;
+        margin-top: -30px;
         margin-bottom: 25px;
     }
 
@@ -311,10 +311,10 @@ font-family: "space mono", sans-serif;
     }
 
     .home-container .home-content1 p{
-        font-size: 16px;
+        font-size: 15px;
         width: 100%;
         text-align: center;
-        padding: 0px 10px;
+        padding: 10px 8px;
     }
 
     .cash-h{
@@ -355,8 +355,8 @@ font-family: "space mono", sans-serif;
     }
 
     .home-content2 img {
-        width: 200px; /* Reduce image size for mobile */
-        height: 200px;
+        width: 180px; /* Reduce image size for mobile */
+        height: 180px;
         animation: none;
     }
 
@@ -372,7 +372,7 @@ font-family: "space mono", sans-serif;
     }
 
     .home-date{
-        font-size: 19px;
+        font-size: 18px;
     }
 
 }

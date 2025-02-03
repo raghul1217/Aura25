@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/clubs.css";
+import { motion } from "framer-motion"; 
 import music from "../assets/musicclub.jpg";
 import dance from "../assets/danceclub.jpg";
 import film from "../assets/film.png";
@@ -50,25 +51,32 @@ const clubsData = [
 const Clubs = () => {
   return (
     <div id="clubs" className="clubs">
-      <h1 className="clubs-head">The Clubs of Gce</h1>
+      <h1 className="clubs-head">The Clubs of GCE</h1>
       <div className="clubs-container">
         {clubsData.map((club, index) => (
-          <div className="book" key={index}>
+          <motion.div
+            className="book"
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ amount: 0.3 }} // Triggers animation when 30% of the element is in view
+            exit={{ opacity: 0, scale: 0.8 }} // Makes it disappear when scrolled away
+          >
             <div className="content">
               <p>{club.description}</p>
               <div className="clubs-btn-div">
-              <button className="custom-btn13 btn-13">
-                <i className="fa-brands fa-instagram"></i>
-                <span className="follow-span">Follow</span>
-              </button>
+                <button className="custom-btn13 btn-13">
+                  <i className="fa-brands fa-instagram"></i>
+                  <span className="follow-span">Follow</span>
+                </button>
               </div>
-              
             </div>
             <div className="cover">
               <img src={club.logo} alt={club.name} className="club-logo" />
               <p className="club-name">{club.name}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
