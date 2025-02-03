@@ -109,7 +109,7 @@ const Home = () => {
             <div className="home-content1">
               {/* <img src={aura} alt="progeni25-logo" /> */}
               {/* <h1 className='brand-main'>Progen'i <span className='number'>{number}.0</span></h1> */}
-              <h1 id="home-head">Aura</h1>
+              <h1 id="home-head">Aura'25</h1>
               <div className="home-date-container">
                 <h3 className="home-date s-home-date">Slated to happen on</h3>
                 <h3 className="home-date">March-01 2025</h3>
