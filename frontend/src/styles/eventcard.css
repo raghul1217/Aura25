@@ -1,159 +1,266 @@
+/* Main container for events */
 .events-container {
-  width: 100%;
+  margin: 0 auto;
   padding: 20px;
-  background-color: var(--background);
 }
 
-.event-category {
-  margin-bottom: 40px;
+/* Parent container for each category */
+.parent {
+  margin-top: 30px; /* Add some space between categories */
 }
 
-.category-title {
-  font-size: 24px;
-  font-weight: bold;
+/* Category container (Solo, Duo, Group events) */
+.event-cont {
+  margin-bottom: 40px; /* Space between event categories */
+}
+
+/* Heading styles for each category */
+h2 {
   text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: center;
-}
-
-
-
-.parent {
-  width: 300px;
-  padding: 20px;
-  perspective: 1000px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0px;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-  
-}
-
-.event-cont{
+/* Aligning event cards in a row and wrapping them when needed */
+.event-cont .events-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;  /* Allow items to wrap to next line if necessary */
+  gap: 20px;  /* Spacing between cards */
+  justify-content: center;  /* Center the cards horizontally */
 }
 
+/* Card Layout */
 .card {
-  padding-top: 50px;
-  border: 3px solid rgb(255, 255, 255);
+  width: 290px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
   transform-style: preserve-3d;
-  background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
-      repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,#ffffff 0 18.75%);
-  background-size: 60px 60px;
-  background-position: 0 0, 0 0;
-  background-color: #f0f0f0;
-  width: 70%;
-  box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ffdd00 0%, #FF7E00 100%);
+  box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
   transition: all 0.5s ease-in-out;
-  margin-bottom: 30px;
 }
 
-.card:hover {
-  background-position: -100px 100px, -100px 100px;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-}
-
-.content-box {
-  background: var(--primary);
-  /* border-radius: 10px 100px 10px 10px; */
-  transition: all 0.5s ease-in-out;
-  padding: 60px 25px 25px 25px;
-  transform-style: preserve-3d;
-}
-
-.content-box .card-title {
-  display: inline-block;
-  color: white;
-  font-size: 25px;
-  font-weight: 900;
-  transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 0px, 50px);
-}
-
-.content-box .card-title:hover {
-  transform: translate3d(0px, 0px, 60px);
-}
-
-.content-box .card-content {
-  margin-top: 10px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #f2f2f2;
-  transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 0px, 30px);
-}
-
-.content-box .card-content:hover {
-  transform: translate3d(0px, 0px, 60px);
-}
-
-.content-box .see-more {
-  cursor: pointer;
-  margin-top: 1rem;
-  display: inline-block;
-  font-weight: 900;
-  font-size: 9px;
-  text-transform: uppercase;
-  color: var(--primary);
-  /* border-radius: 5px; */
-  background: white;
-  padding: 0.5rem 0.7rem;
-  transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 0px, 20px);
-}
-
-.content-box .see-more:hover {
-  transform: translate3d(0px, 0px, 60px);
-}
-
-.date-box {
+/* Logo inside each card */
+.card .logo {
   position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card .content {
+  padding: 100px 60px 0px 30px;
+  transform: translate3d(0, 0, 26px);
+}
+
+.card .title {
+  display: block;
+  color: #00894d;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.card .text {
+  display: block;
+  color: rgba(0, 137, 78, 0.7647058824);
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.card .bottom {
+  padding: 10px 12px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate3d(0, 0, 26px);
+}
+
+
+/* From Uiverse.io by Smit-Prajapati */ 
+
+
+.events-logo{
+  border-radius: 50%;
+}
+
+.glass {
+  transform-style: preserve-3d;
+  position: absolute;
+  inset: 8px;
+  border-radius: 55px;
+  border-top-right-radius: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.815) 100%);
+  transform: translate3d(0px, 0px, 25px);
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+
+.content {
+  padding: 100px 60px 0px 30px;
+  transform: translate3d(0, 0, 26px);
+}
+
+.content .title {
+  display: block;
+  color: var(--text);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.content .text {
+  display: block;
+  color: var(--primary);
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+
+.logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-style: preserve-3d;
+}
+
+.logo .circle {
+  display: block;
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: #ff80007d;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo .circle1 {
+  width: 170px;
+  transform: translate3d(0, 0, 20px);
+  top: 8px;
+  right: 8px;
+}
+
+.logo .circle2 {
+  width: 140px;
+  transform: translate3d(0, 0, 40px);
+  top: 10px;
+  right: 10px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  transition-delay: 0.4s;
+}
+
+.logo .circle3 {
+  width: 110px;
+  transform: translate3d(0, 0, 60px);
+  top: 17px;
+  right: 17px;
+  transition-delay: 0.8s;
+}
+
+.logo .circle4 {
+  width: 80px;
+  transform: translate3d(0, 0, 80px);
+  top: 23px;
+  right: 23px;
+  transition-delay: 1.2s;
+}
+
+.logo .circle5 {
+  width: 50px;
+  transform: translate3d(0, 0, 100px);
   top: 30px;
   right: 30px;
-  height: 60px;
-  width: 60px;
-  background: white;
-  border: 1px solid var(--primary)
-  ;
-  /* border-radius: 10px; */
-  padding: 10px;
-  transform: translate3d(0px, 0px, 80px);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+  display: grid;
+  place-content: center;
+  transition-delay: 1.6s;
 }
 
-.date-box span {
-  display: block;
-  text-align: center;
+.logo .circle5 .svg {
+  width: 20px;
+  fill: white;
 }
 
-.date-box .month {
-  color: rgb(4, 193, 250);
-  font-size: 9px;
-  font-weight: 700;
+.card:hover{
+  transform: rotate3d(1, 1, 0, 30deg);
+  box-shadow: rgba(71, 41, 5, 0.3) 30px 50px 25px -40px, rgba(71, 41, 5, 0.1) 0px 25px 30px 0px;
 }
 
-.date-box .date {
-  font-size: 20px;
-  font-weight: 900;
-  color: rgb(4, 193, 250);
+.parent:hover .card .bottom .social-buttons-container .social-button {
+  transform: translate3d(0, 0, 50px);
+  box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
 }
- 
 
-@media (max-width: 480px){
-  .card{
+.card:hover .logo .circle2 {
+  transform: translate3d(0, 0, 60px);
+}
+
+.card:hover .logo .circle3 {
+  transform: translate3d(0, 0, 80px);
+}
+
+.card:hover .logo .circle4 {
+  transform: translate3d(0, 0, 100px);
+}
+
+.card:hover .logo .circle5 {
+  transform: translate3d(0, 0, 120px);
+}
+
+.events-container .card:nth-child(4) .events-logo { /* 1st club */
+  width: 300px;
+  height: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .card {
+    width: 260px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-cont .events-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center;
+  }
+
+  .card {
     width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    height: 250px;
+  }
+
+  .card .content {
+    padding: 80px 40px 0px 20px;
+  }
+
+  .card .title {
+    font-size: 18px;
+  }
+
+  .card .text {
+    font-size: 14px;
   }
 }

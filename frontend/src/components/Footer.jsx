@@ -10,6 +10,31 @@ const Footer = () => {
     <footer className="footer" id='footer'>
       <div className="footer-content">
 
+
+      
+{/* <div class="parent">
+    <div class="card">
+        <div class="logo">
+            <span class="circle circle1"></span>
+            <span class="circle circle2"></span>
+            <span class="circle circle3"></span>
+            <span class="circle circle4"></span>
+            <span class="circle circle5">
+                <img src="" alt="logo" />
+            </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+            <span class="title">UIVERSE (3D UI)</span>
+            <span class="text">Create, share, and use beautiful custom elements made with CSS</span>
+        </div>
+        
+    </div>
+</div> */}
+
+
+
+
         {/* left Side: Contact Numbers and Icons */}
         <div className="left-side">
         <h4>Contact Us</h4>
