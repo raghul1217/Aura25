@@ -112,7 +112,7 @@ const Home = () => {
               <h1 id="home-head">Aura'25</h1>
               <div className="home-date-container">
                 <h3 className="home-date s-home-date">Slated to happen on</h3>
-                <h3 className="home-date">March-01 2025</h3>
+                <h3 className="home-date">March-01 & 02 2025</h3>
               </div>
               <p>
                 “AURA '25”, the most awaited intercollegiate fest conducted by
@@ -126,7 +126,7 @@ const Home = () => {
                 <Link to="/register" id="neon-btn">
                   <button className="register-btn">REGISTER</button>
                 </Link>
-                <p>Event access per head - ₹250/-</p>
+                <p>Event access per head - ₹180/-</p>
               </div>
             </div>
             <div className="home-content2">

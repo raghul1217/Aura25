@@ -35,7 +35,7 @@ const Events = () => {
     {
       category: "Group Events",
       events: [
-        { title: "Harmonyx", content: "Description 13", logo: music},
+        { title: "Harmonyx", content: "Harmonyx is a musical gathering where singers perform together, fostering teamwork, creativity, and enjoyment through diverse genres in harmonious collaboration.", logo: music},
         { title: "Synchronix", content: "Description 14", logo: dance },
         { title: "Veedhi Nadagam", content: "Description 15", logo: tamil },
         { title: "Villupaatu", content: "Description 16", logo: tamil },
@@ -52,7 +52,7 @@ const Events = () => {
       <div className="parent">
         {eventsData.map((categoryData, index) => (
           <div key={index} className='event-cont'>
-            <h2>{categoryData.category}</h2>
+            <h2 className='events-head'>{categoryData.category}</h2>
             <div className="events-container">
               {categoryData.events.map((event, idx) => (
                 <div className="card" key={idx}>
@@ -66,7 +66,7 @@ const Events = () => {
                     </span>
                   </div>
                   <div className="glass"></div>
-                  <div className="content">
+                  <div className="content-event">
                     <span className="title">{event.title}</span>
                     <span className="text">{event.content}</span>
                   </div>

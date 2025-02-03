@@ -1,8 +1,5 @@
 /* Overall container */
 
-body{
-    background-color: var(--primary);
-}
 
 .clubs{
     display: flex;
@@ -13,10 +10,12 @@ body{
 
 .clubs-head{
     color: var(--background);
-    font-family: Montserrat;
-    font-weight: 500;
+    font-family: "Playwrite CU", serif;
+    font-weight: 800;
     font-size: 30px;
     margin: 25px;
+    margin-bottom: 50px;
+    margin-top: 80px;
 }
 
 #clubs {
@@ -25,7 +24,7 @@ body{
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    background-color: var(--primary);
+    background-color: #ff8000e6;
   }
   
   /* Grid container for club cards */
@@ -37,7 +36,7 @@ body{
     max-width: 1200px;
     width: 80%;
     margin-bottom: 50px;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
   }
   
   /* Club card */
@@ -71,6 +70,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Playwrite CU", serif;
+    font-weight: 900;
   }
   
   /* Club logo on the cover */
@@ -79,10 +80,11 @@ body{
     height: 130px;
     margin-bottom: 10px;
     margin-top: -20px;
+    border-radius: 50%;
   }
 
   .club-name{
-    font-weight: 500;
+    font-weight: 800;
     font-size: 18px;
   }
   

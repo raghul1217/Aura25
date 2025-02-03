@@ -89,7 +89,7 @@
 }
 
 .home-content1 p {
-    font-family: "Lexend", sans-serif;
+    font-family: "Playwrite AU SA", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -104,10 +104,11 @@
     flex-direction: row;
     gap: 10px;
     color: var(--secondary);
+    font-family: "Playwrite CU", serif;
 }
 
 .home-date{
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Playwrite CU", serif;
     font-weight: 600;
     font-size: 25px;
     display: flex;

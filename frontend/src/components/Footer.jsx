@@ -149,7 +149,7 @@ const Footer = () => {
             <li><a href="/rulebook.pdf" download>Rulebook</a></li>
           </ul>
         </div>
-        
+
 
         {/* right side */}
         <div className="right-side">
@@ -175,7 +175,7 @@ const Footer = () => {
       {/* Footer bottom text */}
       <div className="footer-bottom">
         <hr />
-        <p className='footer-p'>Designed & Developed by <a href="https://portfolio-react-renderspark.vercel.app/" target="_blank" rel="noopener noreferrer">renderspark</a></p>
+        <p className='footer-p'>Designed & Developed by <a href="https://portfolio-react-renderspark.vercel.app/" target="_blank" rel="noopener noreferrer">Renderspark.</a></p>
 
       </div>
     </footer>

@@ -11,7 +11,8 @@
 
 /* Category container (Solo, Duo, Group events) */
 .event-cont {
-  margin-bottom: 40px; /* Space between event categories */
+  margin-bottom: 40px;
+  text-align: center; /* Space between event categories */
 }
 
 /* Heading styles for each category */
@@ -27,23 +28,24 @@ h2 {
 .event-cont .events-container {
   display: flex;
   flex-wrap: wrap;  /* Allow items to wrap to next line if necessary */
-  gap: 20px;  /* Spacing between cards */
+  gap: 60px;  /* Spacing between cards */
   justify-content: center;  /* Center the cards horizontally */
 }
 
 /* Card Layout */
 .card {
-  width: 290px;
-  height: 300px;
+  width: 300px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   transform-style: preserve-3d;
   justify-content: space-between;
   position: relative;
   border-radius: 50px;
-  background: linear-gradient(135deg, #ffdd00 0%, #FF7E00 100%);
+  background: linear-gradient(135deg, #ffbb00 0%, #ff8c00 100%);
   box-shadow: rgba(71, 41, 5, 0) 40px 50px 25px -40px, rgba(71, 50, 5, 0.2) 0px 25px 25px -5px;
   transition: all 0.5s ease-in-out;
+  margin-bottom: 13px;
 }
 
 /* Logo inside each card */
@@ -53,8 +55,8 @@ h2 {
   top: 0;
 }
 
-.card .content {
-  padding: 100px 60px 0px 30px;
+.card .content-event {
+  padding: 90px 30px 0px 20px;
   transform: translate3d(0, 0, 26px);
 }
 
@@ -70,6 +72,7 @@ h2 {
   color: rgba(0, 137, 78, 0.7647058824);
   font-size: 15px;
   margin-top: 20px;
+  text-align: left;
 }
 
 .card .bottom {
@@ -84,6 +87,28 @@ h2 {
   transform: translate3d(0, 0, 26px);
 }
 
+.events-head{
+  text-align: center;
+    font-size: 35px;
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    font-weight: 900;
+    color: var(--text);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.events-head::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(45deg, #ffbb00 0%, #ff8c00 100%);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
 
 /* From Uiverse.io by Smit-Prajapati */ 
 
@@ -105,23 +130,29 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 
-.content {
-  padding: 100px 60px 0px 30px;
+.content-event {
+  padding: 50px 30px 0px 30px;
   transform: translate3d(0, 0, 26px);
+  font-family: 'Montserrat', 'serif';
 }
 
-.content .title {
+.content-event .title {
   display: block;
   color: var(--text);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 20px;
+  text-align: left;
+  width: 70%;
+  /* font-family: 'AlphaCentauri', 'lexend', 'sans-serif'; */
+  font-family: "Playwrite CU", serif;
 }
 
-.content .text {
+.content-event .text {
   display: block;
-  color: var(--primary);
+  color: var(--text);
   font-size: 15px;
   margin-top: 20px;
+  font-family: "Playwrite AU SA", serif;
 }
 
 
@@ -252,7 +283,7 @@ h2 {
     height: 250px;
   }
 
-  .card .content {
+  .card .content-event {
     padding: 80px 40px 0px 20px;
   }
 
@@ -262,5 +293,10 @@ h2 {
 
   .card .text {
     font-size: 14px;
+  }
+
+  .events-head{
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 }
