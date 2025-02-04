@@ -50,7 +50,7 @@ const Events = () => {
   useEffect(() => {
     const sr = ScrollReveal({
       origin: 'right', // try this instead of 'bottom'
-      distance: '80px',
+      distance: '70px',
       duration: 1000,
       delay: 300,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',

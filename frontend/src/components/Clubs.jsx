@@ -86,7 +86,7 @@ const Clubs = () => {
               <p className="club-name">{club.name}</p>
 
               <div class="btn-conteiner">
-                <a href="#" class="btn-content">
+                <a class="btn-content">
                   <span class="icon-arrow">
                     <svg
                       xmlns:xlink="http://www.w3.org/1999/xlink"
