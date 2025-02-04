@@ -115,12 +115,12 @@ const Home = () => {
                 <h3 className="home-date">March-01 & 02 2025</h3>
               </div>
               <p>
-                <span>“AURA '25”</span>, the most awaited intercollegiate fest conducted by
-                'Government College of Engineering, Salem', coordinated by the
-                exuberant clubs of ours is here reflecting it's aura like a
-                magnetic field attracting all the energetic crowds with lively
-                performances. Buckle up for an overall atmosphere of joy and
-                celebration!!
+                <span>“AURA '25”</span>, the most awaited intercollegiate fest
+                conducted by 'Government College of Engineering, Salem',
+                coordinated by the exuberant clubs of ours is here reflecting
+                it's aura like a magnetic field attracting all the energetic
+                crowds with lively performances. Buckle up for an overall
+                atmosphere of joy and celebration!!
               </p>
               <div className="home-btn">
                 <Link to="/register" id="neon-btn">
@@ -132,6 +132,24 @@ const Home = () => {
             <div className="home-content2">
               <img src={aura} alt="" />
             </div>
+            <button class="fixed bottom-5 right-5 cursor-pointer flex items-center justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[130px]">
+  Rulebook
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    class="w-5 h-5 animate-bounce"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+    ></path>
+  </svg>
+</button>
+
           </div>
         </section>
       </div>

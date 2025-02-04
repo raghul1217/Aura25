@@ -145,7 +145,7 @@ button {
 
 #header-btn{
     font-family: "Playwrite AU SA", serif;
-    font-family: "Playwrite CU", serif;
+    /* font-family: "Playwrite CU", serif; */
 }
 
 .btn-12 {
@@ -158,7 +158,7 @@ button {
 
 .btn-12:hover {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--background);
 }
 
 .btn-12:before {
