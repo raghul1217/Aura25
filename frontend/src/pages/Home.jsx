@@ -106,52 +106,52 @@ const Home = () => {
             </div>
 
             <div className="home-container">
-            <div className="home-content1">
-              {/* <img src={aura} alt="progeni25-logo" /> */}
-              {/* <h1 className='brand-main'>Progen'i <span className='number'>{number}.0</span></h1> */}
-              <h1 id="home-head">Aura'25</h1>
-              <div className="home-date-container">
-                <h3 className="home-date s-home-date">Slated to happen on</h3>
-                <h3 className="home-date">March - 01 & 02 - 2025</h3>
+              <div className="home-content1">
+                {/* <img src={aura} alt="progeni25-logo" /> */}
+                {/* <h1 className='brand-main'>Progen'i <span className='number'>{number}.0</span></h1> */}
+                <h1 id="home-head">Aura'25</h1>
+                <div className="home-date-container">
+                  <h3 className="home-date s-home-date">Slated to happen on</h3>
+                  <h3 className="home-date">March - 01 & 02 - 2025</h3>
+                </div>
+                <p>
+                  <span>“AURA '25”</span>, the most awaited intercollegiate fest
+                  conducted by 'Government College of Engineering, Salem',
+                  coordinated by the exuberant clubs of ours is here reflecting
+                  it's aura like a magnetic field attracting all the energetic
+                  crowds with lively performances. Buckle up for an overall
+                  atmosphere of joy and celebration!!
+                </p>
+                <div className="home-btn">
+                  <Link to="/register" id="neon-btn">
+                    <button className="register-btn">Register</button>
+                  </Link>
+                  <p>Event access per head - ₹180/-</p>
+                </div>
               </div>
-              <p>
-                <span>“AURA '25”</span>, the most awaited intercollegiate fest
-                conducted by 'Government College of Engineering, Salem',
-                coordinated by the exuberant clubs of ours is here reflecting
-                it's aura like a magnetic field attracting all the energetic
-                crowds with lively performances. Buckle up for an overall
-                atmosphere of joy and celebration!!
-              </p>
-              <div className="home-btn">
-                <Link to="/register" id="neon-btn">
-                  <button className="register-btn">Register</button>
-                </Link>
-                <p>Event access per head - ₹180/-</p>
+              <div className="home-content2">
+                <img src={aura} alt="" />
               </div>
+              <button class="fixed bottom-5 right-5 cursor-pointer flex items-center justify-center bg-gray-800 sm:px-4 sm:py-4 px-2 py-2  rounded text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[100px] h-[40px] md:w-[30px] md:h-[30px] sm:w-[25px] sm:h-[25px] z-[9999]">
+  <span class="text-sm md:hidden">Rules</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 20 20"
+    stroke-width="2"
+    stroke="currentColor"
+    class="w-4 h-4 md:w-3 md:h-3 sm:w-3 sm:h-3 animate-bounce"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+    ></path>
+  </svg>
+</button>
+
             </div>
-            <div className="home-content2">
-              <img src={aura} alt="" />
-            </div>
-            <button class="fixed bottom-5 right-5 cursor-pointer flex items-center justify-between bg-gray-800 px-3 py-2 rounded text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[100px]">
-              Rules
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-5 h-5 animate-bounce"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-                ></path>
-              </svg>
-            </button>
           </div>
-          </div>
-          
         </section>
       </div>
 
