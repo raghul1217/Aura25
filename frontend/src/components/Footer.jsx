@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Arpudha</p>
+              <p>Arpudha A K</p>
               </div>
               <div className="align2">
               <p>: 9952390749</p>

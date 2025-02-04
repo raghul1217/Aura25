@@ -164,7 +164,8 @@
 }
 
 .footer-p {
-  font-size: 12px;
+  font-size: 13px;
+  font-family: 'Montserrat', 'serif';
 }
 
 .footer-p a{
@@ -218,7 +219,7 @@
   }
 
   .footer-p {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .contact-numbers{
@@ -235,7 +236,7 @@
   }
 
   .people-contact p{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
   }
 }
@@ -247,7 +248,7 @@
     }
 
     .people-contact p{
-      font-size: 12px;
+      font-size: 13px;
     }
 }
 

@@ -124,7 +124,7 @@ const Home = () => {
               </p>
               <div className="home-btn">
                 <Link to="/register" id="neon-btn">
-                  <button className="register-btn">REGISTER</button>
+                  <button className="register-btn">Register</button>
                 </Link>
                 <p>Event access per head - ₹180/-</p>
               </div>

@@ -106,9 +106,10 @@
 .home-date-container{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 12px;
     color: var(--secondary);
     font-family: "Playwrite CU", serif;
+    margin: 10px 0px;
 }
 
 .home-date{
@@ -179,7 +180,7 @@ font-family: "space mono", sans-serif;
     display: flex;
     gap: 10px;
     margin-top: 10px;
-    font-family: 'AlphaCentauri';
+    font-family: "Playwrite CU", serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -188,6 +189,12 @@ font-family: "space mono", sans-serif;
 
 .home-btn a{
     margin-bottom: 10px;
+}
+
+.home-btn p{
+    font-family: "Playwrite CU", serif;
+    font-family: "Playwrite AU SA", serif;
+    font-weight: 600;
 }
 
 /* Neon glow effect for the register button */
@@ -298,7 +305,7 @@ font-family: "space mono", sans-serif;
     }
 
     #home-head{
-        color: black;
+        color: var(--primary);
         font-size: 30px;
     }
 

@@ -270,5 +270,97 @@
   100% { transform: scale(50) rotate(45deg); opacity: 0; }
 }
 
+.cover{
+  position: relative;
+}
+
+.btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #9ee5fa;
+  --color-background: #353535;
+  --color-outline: #9ee5fa80;
+  --color-shadow: #00000080;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  color: var(--color-text);
+  transition: 0.5s;
+  border-radius: 100px;
+  /* Apply the hover/focus effects permanently */
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  /* Instead of margin-right: 0px on default and 25px on hover,
+     we now set it permanently to 25px */
+  margin-right: 25px;
+  transform: scale(0.6);
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+
+/* Always animate the SVG arrow icons without needing hover */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+#arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+/* SVG color animation */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: var(--color-background);
+  }
+  100% {
+    fill: #FF7E00;
+  }
+}
+
+/* Button outline animation (applied once on render) */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
 
 

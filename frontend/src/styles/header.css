@@ -139,7 +139,13 @@ button {
 }
 
 .logout-span{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Playwrite AU SA", serif;
+    font-family: "Playwrite CU", serif;
+}
+
+#header-btn{
+    font-family: "Playwrite AU SA", serif;
+    font-family: "Playwrite CU", serif;
 }
 
 .btn-12 {

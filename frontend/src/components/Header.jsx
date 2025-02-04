@@ -55,12 +55,12 @@ function Header() {
                         {isLoggedIn ? (
                             <li>
                                 <button className="custom-btn btn-12" onClick={handleLogout}>
-                                    <span className='logout-span'>Logout</span>
+                                    <span className='logout-span' id='header-btn'>Logout</span>
                                 </button>
                             </li>
                         ) : (
                             <button className="custom-btn btn-12" onClick={() => handleLinkClick('/login')}>
-                                    <span className='logout-span'>Login</span>
+                                    <span className='logout-span'id='header-btn'>Login</span>
                             </button>
                         )}
                     </ul>
