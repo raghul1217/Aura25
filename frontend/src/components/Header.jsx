@@ -100,7 +100,7 @@ function Header() {
                 </button>
               </li>
             ) : (
-              <button className="custom-btn btn-12" onClick={handleDownload}>
+              <button className="custom-btn btn-12" onClick={() => window.open("https://drive.google.com/drive/folders/10rg6bsXhj8f7FAUODSHTb_Nil_ho9SYz", "_blank")}>
                 <span className="logout-span" id="header-btn">
                   <i className="fas fa-download"></i> Rulebook
                 </span>
