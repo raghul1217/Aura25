@@ -16,7 +16,7 @@ const Events = () => {
       events: [
         { title: "Vocal Vibes", content: "Solo performer showcasing vocal skills, expression, and stage presence, conveying emotions through their unique voice.", logo: music },
         { title: "One Beat", content: "Single dancer showcasing skill, expression, and creativity, highlighting technique and storytelling.", logo: dance },
-        { title: "Tamil Speech", content: "அறிவு ஆயுதம் கொண்டு, தலைப்பிலிருந்து விலகாமல் வாய்மொழியும் கருத்துகளில் கேட்பவர்கள் நெஞ்சை வசப்படுத்தும் போட்டி", logo: tamil, class: "tamiltext", },
+        { title: "பேச்சுப்போட்டி", content: "அறிவு ஆயுதம் கொண்டு, தலைப்பிலிருந்து விலகாமல் வாய்மொழியும் கருத்துகளில் கேட்பவர்கள் நெஞ்சை வசப்படுத்தும் போட்டி", logo: tamil, class: "tamiltext", },
         { title: "Poem Writing", content: "Participants writing poems inspired by given pictures, showcasing creativity and emotional expression.", logo: english },
         { title: "Monologue", content: "Solo performer delivering a character's emotions, thoughts, or story, showcasing acting skills and expression.", logo: film },
         { title: "Pencil Sketching", content: "Artists creating lively black and white pictures using graphite pencils.", logo: arts }
@@ -27,7 +27,7 @@ const Events = () => {
       events: [
         { title: "Meloduet", content: "Two singers performing together, showcasing coordination, vocal blending, and emotional expression.", logo: music },
         { title: "Dynamic Duo", content: "Two dancers performing together, highlighting coordination, chemistry, and synchronization.", logo: dance },
-        { title: "Tamil Quiz", content: "தமிழனின் வரலாறு, இலக்கணம், இலக்கியம், பண்பாடு, கலாச்சாரம் என்று நம் பெருமைகளை நினைவு கூர்ந்து விடையளிக்கும் போட்டி.", logo: tamil, class: "tamiltext",},
+        { title: "தமிழ் வினாடி வினா", content: "தமிழனின் வரலாறு, இலக்கணம், இலக்கியம், பண்பாடு, கலாச்சாரம் என்று நம் பெருமைகளை நினைவு கூர்ந்து விடையளிக்கும் போட்டி.", logo: tamil, class: "tamiltext",},
         { title: "English Quiz", content: " Competitors testing linguistic skills and knowledge, showcasing expertise and speed.", logo: english },
         { title: "Face Painting", content: "Artists creating temporary, vibrant designs on participants' hands or faces.", logo: arts },
       ]
@@ -37,8 +37,8 @@ const Events = () => {
       events: [
         { title: "Harmonyx", content: "Musical gathering featuring choirs, bands, or groups singing in harmony, fostering teamwork and creativity.", logo: music},
         { title: "Synchronix", content: "Coordinated dance performance featuring multiple dancers, showcasing teamwork, rhythm, and creativity.", logo: dance },
-        { title: "Veedhi Nadagam", content: "நாட்டுத் தேவையான நற்கருத்துகள், எளிய நடையிலும் உண்மையான பாடல்களிலும் நவரசம் கலந்த வீதி நாடகம்.", logo: tamil, class: "tamiltext", },
-        { title: "Villupaatu", content: "கேளாத செவிகளையும் கேட்க வைத்து, வர்ணம் மெட்டுகளில் நம் மனதை வருடும் தேனிசை வில்லுப்பாட்டு.", logo: tamil, class: "tamiltext", },
+        { title: "வீதி நாடகம்", content: "நாட்டுக்குத் தேவையான நற்கருத்துகள், எளிய நடையிலும் உண்மையான பாடல்களிலும் நவரசம் கலந்த வீதி நாடகம்.", logo: tamil, class: "tamiltext", },
+        { title: "வில்லுப்பாட்டு", content: "கேளாத செவிகளையும் கேட்க வைத்து, வர்ண மெட்டுகளில் நம் மனதை வருடும் தேனிசை வில்லுப்பாட்டு.", logo: tamil, class: "tamiltext", },
         { title: "Short Film", content: "Creators producing impactful, engaging short films showcasing storytelling and visuals.", logo: film},
         { title: "Scene Recreation", content: "Teams recreating iconic movie scenes, capturing emotions, cinematography, and essence.", logo: film },
         { title: "Adzap", content: "Teams creating and acting out imaginative ads, testing creativity, teamwork, and quick thinking.", logo: english },

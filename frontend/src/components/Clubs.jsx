@@ -32,11 +32,12 @@ const clubsData = [
       "📖 Literature is a mirror of the world 🌎 and it reflects the beauty of human nature. ✨ And hereby we have the English Literary Association of our GCE Salem, 🖋️ brimming with its little buddies 🧠 who always brew creativity 🎨 and excellence 🌟 and are ready to serve 'em to the world! 🏆📚✍️",
   },
   {
-    name: "Tamil Club",
+    name: "தமிழ் இலக்கிய மன்றம்",
     logo: tamil,
+    class: "tamill",
     link: "https://www.instagram.com/thamizh_ilakkiya_mandram?igsh=MTgxYzluc2tnamhlcw==",
     description:
-      "📝 தமிழ் இலக்கியம்‌ என்பது தமிழரின் வாழ்வின் அடையாளம். 🏛️ Speaking of, the Tamil Literary Association of our GCE Salem, 🏆 has paved the way for many, imprinting the rich cultural heritage 🎭, tradition 🏵️, and inspiration of Tamil amongst us. 📜🖋️🎶",
+      "தமிழ் இலக்கியம்📖, சங்கத் தமிழனின் வாழ்வியலை பிரதிபலிக்கும். எம் கல்லூரித் தமிழ் இலக்கிய மன்றமோ🏆 நம் தாய்த்தமிழ் மற்றும் தமிழனின் பெருமைகளைப் பறை சாற்றும் விதமாக💪, தமிழ் ஆர்வலர்களை ஒன்று திரட்டி🤝, பல்வேறு வகையான நிகழ்வுகளை நடத்தி✨, அனைவர் மனதிலும் நல்ல மதிப்பைப் பெற்று வளர்கிறது👑",
   },
   {
     name: "Arts Club",
@@ -70,7 +71,7 @@ const Clubs = () => {
             exit={{ opacity: 0, scale: 0.8 }} // Makes it disappear when scrolled away
           >
             <div className="content">
-              <p>{club.description}</p>
+              <p className={club.class}>{club.description}</p>
               <div className="clubs-btn-div">
                 <button
                   className="custom-btn13 btn-13"
