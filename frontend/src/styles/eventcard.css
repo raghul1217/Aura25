@@ -301,4 +301,8 @@ h2 {
     font-size: 26px;
     margin-bottom: 20px;
   }
+
+  .content-event .tamiltext{
+    font-size: 14px;
+  }
 }
