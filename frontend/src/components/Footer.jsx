@@ -43,7 +43,7 @@ const Footer = () => {
               <div className="align1">
               <i class="fas fa-phone"></i>
               <p>
-                Gowtham Musgesh S
+                Gowtham Mugesh S
               </p>
               </div>
               <div className="align2">
@@ -92,7 +92,7 @@ const Footer = () => {
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Duraiarasan T</p>
+              <p>Durai Arasan T</p>
               </div>
               <div className="align2">
               <p>: 9025051418</p>
@@ -142,7 +142,7 @@ const Footer = () => {
         <div className="center-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><Link to="/">Home</Link></li>
+            <li><a to="#home">Home</a></li>
             <li><a href="#clubs" >Clubs</a></li>
             <li><a href="#events" >Events</a></li>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target='_blank'>Register</a></li>
