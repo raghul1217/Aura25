@@ -293,6 +293,7 @@ h2 {
 
   .card .title {
     font-size: 20px;
+    width: 80%;
   }
 
   .card .text {
@@ -308,7 +309,11 @@ h2 {
     font-size: 14px;
     font-weight: 400;
   }
+
+
 }
+
+
 
 
 .content-event .tamiltext{
