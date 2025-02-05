@@ -54,7 +54,7 @@ function Header() {
           </div>
           <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
             <li>
-              <a href="#home" onClick={() => handleLinkClick("/")}>
+              <a href="#home" onClick={() => handleLinkClick("/#home")}>
                 Home
               </a>
             </li>

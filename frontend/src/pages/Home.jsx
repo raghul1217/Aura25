@@ -80,7 +80,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="home-bg">
+      <div className="home-bg" id="home">
         <Header />
         <section id="rotating-section1">
           <div id="rotating-animation">
