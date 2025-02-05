@@ -132,9 +132,9 @@ const Home = () => {
                   atmosphere of joy and celebration!!
                 </p>
                 <div className="home-btn">
-                  <Link to="/register" id="neon-btn">
+                  <a to="/register" id="neon-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target="_blank">
                     <button className="register-btn">Register</button>
-                  </Link>
+                  </a>
                   <p>Event access per head - ₹180/-</p>
                 </div>
               </div>
