@@ -175,7 +175,7 @@ const Footer = () => {
       {/* Footer bottom text */}
       <div className="footer-bottom">
         <hr />
-        <p className='footer-p'>Designed & Developed by <a href="https://portfolio-react-renderspark.vercel.app/" target="_blank" rel="noopener noreferrer">Renderspark.</a></p>
+        <p className='footer-p'>Designed & Developed by <a href="https://renderspark.vercel.app/" target="_blank" rel="noopener noreferrer">Renderspark.</a></p>
 
       </div>
     </footer>

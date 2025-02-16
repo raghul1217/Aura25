@@ -141,25 +141,6 @@ const Home = () => {
               <div className="home-content2">
                 <img src={aura} alt="" />
               </div>
-              {/* <button
-                class="fixed bottom-5 right-5 cursor-pointer flex items-center justify-center bg-gray-800 px-2 py-2 rounded text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[30px] h-[30px] sm:w-[25px] sm:h-[25px] z-[9999] lg:hidden"
-                onClick={handleDownload}
-              > 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-4 h-4 sm:w-3 sm:h-3 animate-bounce"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-                  ></path>
-                </svg>
-              </button> */}
             </div>
           </div>
         </section>
@@ -187,7 +168,6 @@ const Home = () => {
       )}
       <Clubs />
       <Events />
-
       <Footer />
     </>
   );

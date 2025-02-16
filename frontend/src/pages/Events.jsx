@@ -154,13 +154,13 @@ const Events = () => {
       easing: "cubic-bezier(0.5, 0, 0, 1)",
       reset: true,
       beforeReveal: (el) => {
-        el.style.transform = "none"; // Preserve the existing 3D transform
+        el.style.transform = "none"; 
       },
     });
 
     sr.reveal(".card-wrap", { interval: 250 });
 
-    return () => sr.destroy(); // Clean up on unmount
+    return () => sr.destroy(); 
   }, []);
 
   return (
