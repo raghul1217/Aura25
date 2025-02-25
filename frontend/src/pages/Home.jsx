@@ -135,6 +135,7 @@ const Home = () => {
                   <a to="/register" id="neon-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target="_blank">
                     <button className="register-btn">Register</button>
                   </a>
+                  <p>Registration closes on 27th march 12pm.</p>
                   <p>Event access per head - ₹180/-</p>
                 </div>
               </div>

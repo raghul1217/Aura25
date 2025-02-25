@@ -370,7 +370,7 @@ font-family: "space mono", sans-serif;
 @media (max-width: 768px) {
 
     #rotating-section1{
-        min-height: 100vh;
+        height: 120vh;
     }
 
     .home-container {
@@ -444,5 +444,9 @@ font-family: "space mono", sans-serif;
 
     .home-date {
         font-size: 18px;
+    }
+
+    .home-bg{
+        height: 120vh;
     }
 }
