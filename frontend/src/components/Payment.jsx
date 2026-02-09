@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import '../styles/payment.css';
-import gpay1 from '../assets/gpay1.jpg';
 
 const Payment = () => {
   const [copySuccess, setCopySuccess] = useState(false); // Boolean to control visibility

@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import logo2 from "../assets/logo2.png";
 import aura from "../assets/Auralogo.png";
-import { Link } from "react-router-dom";
-import pilot from "../assets/pilot.svg";
 import "../styles/home.css";
 import Events from "./Events";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Parallax from "../components/Parallax";
 import { FaTimes } from "react-icons/fa";
 import Clubs from "../components/Clubs";
-
+import ImageCarousel from "../components/ImageCarousel";
 const Home = () => {
   const [number, setNumber] = useState(20);
   const [showNotification, setShowNotification] = useState(false);
@@ -169,6 +165,7 @@ const Home = () => {
       )}
       <Clubs />
       <Events />
+      <ImageCarousel />
       <Footer />
     </>
   );
