@@ -146,19 +146,22 @@ const Home = () => {
               <div className="home-content1">
                 {/* <img src={aura} alt="progeni25-logo" /> */}
                 {/* <h1 className='brand-main'>Progen'i <span className='number'>{number}.0</span></h1> */}
-                <h1 id="home-head">Aura'25</h1>
-                <div className="home-date-container">
-                  <h3 className="home-date s-home-date">Slated to happen on</h3>
-                  <h3 className="home-date">March - 14 & 15 - 2026</h3>
-                </div>
+                <h1 id="home-head">Aura'26</h1>
                 <p>
-                  <span>"AURA '25"</span>, the most awaited intercollegiate fest
+                  From the legacy of <span>"AURA '25"</span> to a grander, louder, and more vibrant <span>"AURA '26"</span>, we return with unstoppable energy, creativity, and campus spirit.
+                  Get ready to experience culture, talent, and passion like never before
+
+                  {/* <span>"AURA '26"</span>, the most awaited intercollegiate fest
                   conducted by 'Government College of Engineering, Salem',
                   coordinated by the exuberant clubs of ours is here reflecting
                   it's aura like a magnetic field attracting all the energetic
                   crowds with lively performances. Buckle up for an overall
-                  atmosphere of joy and celebration!!
+                  atmosphere of joy and celebration!! */}
                 </p>
+                <div className="home-date-container">
+                  <h3 className="home-date s-home-date">Slated to happen on</h3>
+                  <h3 className="home-date">March - 14 & 15 - 2026</h3>
+                </div>
                 <div className="countdown-container">
                   <h3 className="countdown-title">Hurry Up! Registration closes in</h3>
                   <div className="countdown-timer">
