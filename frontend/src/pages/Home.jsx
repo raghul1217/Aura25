@@ -60,7 +60,7 @@ const Home = () => {
         const res = await axios.post(
           `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/profile`,
           {},
-          header
+          header,
         );
         const { name, paymentStatus } = res.data.data;
         setUserName(name);
@@ -148,8 +148,11 @@ const Home = () => {
                 {/* <h1 className='brand-main'>Progen'i <span className='number'>{number}.0</span></h1> */}
                 <h1 id="home-head">Aura'26</h1>
                 <p>
-                  From the legacy of <span>"AURA '25"</span> to a grander, louder, and more vibrant <span>"AURA '26"</span>, we return with unstoppable energy, creativity, and campus spirit.
-                  Get ready to experience culture, talent, and passion like never before
+                  From the legacy of <span>"AURA '25"</span> to a grander,
+                  louder, and more vibrant <span>"AURA '26"</span>, we return
+                  with unstoppable energy, creativity, and campus spirit. Get
+                  ready to experience culture, talent, and passion like never
+                  before
                 </p>
                 {/* <div className="home-date-container">
                   <h3 className="home-date s-home-date">A multi-day intercollege cultural fest celebrating music, dance, arts, literature, and creativity.
@@ -170,26 +173,35 @@ Two days. Infinite memories 💃🎤</h3>
                     </div>
                     <div className="countdown-separator">:</div>
                     <div className="countdown-item">
-                      <span className="countdown-value">{timeLeft.minutes}</span>
+                      <span className="countdown-value">
+                        {timeLeft.minutes}
+                      </span>
                       <span className="countdown-label">Minutes</span>
                     </div>
                     <div className="countdown-separator">:</div>
                     <div className="countdown-item">
-                      <span className="countdown-value">{timeLeft.seconds}</span>
+                      <span className="countdown-value">
+                        {timeLeft.seconds}
+                      </span>
                       <span className="countdown-label">Seconds</span>
                     </div>
                   </div>
                 </div>
-                <p>
-                  A multi-day intercollege cultural fest celebrating music, dance, arts, literature, and creativity.
-Two days. Infinite memories 💃🎤
-                </p>
                 <div className="home-btn">
-                  <a to="/register" id="neon-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target="_blank">
+                  <a
+                    to="/register"
+                    id="neon-btn"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform"
+                    target="_blank"
+                  >
                     <button className="register-btn">Register</button>
                   </a>
                   <p>Registration closes on 10th March 2026</p>
-                  <p>Late registrations will not be entertained</p>
+                  <p>
+                    A multi-day intercollege cultural fest celebrating music,
+                    dance, arts, literature, and creativity. Two days. Infinite
+                    memories 💃🎤
+                  </p>
                 </div>
               </div>
               <div className="home-content2">
