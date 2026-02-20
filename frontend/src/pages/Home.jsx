@@ -188,8 +188,8 @@ Two days. Infinite memories 💃🎤
                   <a to="/register" id="neon-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target="_blank">
                     <button className="register-btn">Register</button>
                   </a>
-                  <p>Registration closes on 13th march 12pm.</p>
-                  <p>Event access per head - ₹180/-</p>
+                  <p>Registration closes on 10th March 2026</p>
+                  <p>Late registrations will not be entertained</p>
                 </div>
               </div>
               <div className="home-content2">

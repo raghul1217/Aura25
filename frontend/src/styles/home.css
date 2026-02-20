@@ -208,7 +208,7 @@ font-family: "space mono", sans-serif;
     margin: 15px 0;
     padding: 20px;
     background: linear-gradient(135deg, rgba(255, 126, 0, 0.05), rgba(255, 126, 0, 0.1));
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid rgba(255, 126, 0, 0.2);
     box-shadow: 0 8px 32px rgba(255, 126, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -547,7 +547,7 @@ font-family: "space mono", sans-serif;
 
     /* Countdown Timer Mobile Styles */
     .countdown-container {
-        padding: 12px 5px;
+        padding: 18px 5px;
         gap: 10px;
         max-width: 100%;
         width: 120%;
