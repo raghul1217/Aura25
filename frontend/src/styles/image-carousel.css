@@ -49,13 +49,13 @@
 
 .carousel {
   width: 100%;
-  height: 480px; /* Reduced height to account for indicators */
+  height: 550px; /* Reduced height to account for indicators */
   overflow: hidden;
   border-radius: 25px 5px 25px 5px; /* Modern asymmetrical border: big-small-big-small */
   position: relative;
   z-index: 5; /* Ensure carousel is behind indicators if needed */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Move shadow to carousel */
-  border-width: 12px 4px 12px 4px; /* Thicker borders for more prominent frame look */
+  border-width: 16px 7px 16px 7px; /* Thicker borders for more prominent frame look */
   border-style: solid;
   border-color: var(--primary); /* Orange border/frame to match theme */
 }
@@ -147,7 +147,7 @@
   height: 8px;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(168, 167, 166, 0.5);
   cursor: pointer;
   transition: all 0.3s ease;
 }

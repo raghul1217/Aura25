@@ -233,8 +233,8 @@ Two days. Infinite memories 💃🎤</h3>
         </div>
       )}
       <Clubs />
-      <Events />
       <ImageCarousel />
+      <Events />
       <Footer />
     </>
   );
