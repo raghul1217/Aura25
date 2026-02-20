@@ -150,20 +150,14 @@ const Home = () => {
                 <p>
                   From the legacy of <span>"AURA '25"</span> to a grander, louder, and more vibrant <span>"AURA '26"</span>, we return with unstoppable energy, creativity, and campus spirit.
                   Get ready to experience culture, talent, and passion like never before
-
-                  {/* <span>"AURA '26"</span>, the most awaited intercollegiate fest
-                  conducted by 'Government College of Engineering, Salem',
-                  coordinated by the exuberant clubs of ours is here reflecting
-                  it's aura like a magnetic field attracting all the energetic
-                  crowds with lively performances. Buckle up for an overall
-                  atmosphere of joy and celebration!! */}
                 </p>
-                <div className="home-date-container">
-                  <h3 className="home-date s-home-date">Slated to happen on</h3>
+                {/* <div className="home-date-container">
+                  <h3 className="home-date s-home-date">A multi-day intercollege cultural fest celebrating music, dance, arts, literature, and creativity.
+Two days. Infinite memories 💃🎤</h3>
                   <h3 className="home-date">March - 14 & 15 - 2026</h3>
-                </div>
+                </div> */}
                 <div className="countdown-container">
-                  <h3 className="countdown-title">Hurry Up! Registration closes in</h3>
+                  <h3 className="countdown-title">March - 14 & 15 - 2026</h3>
                   <div className="countdown-timer">
                     <div className="countdown-item">
                       <span className="countdown-value">{timeLeft.days}</span>
@@ -186,6 +180,10 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+                <p>
+                  A multi-day intercollege cultural fest celebrating music, dance, arts, literature, and creativity.
+Two days. Infinite memories 💃🎤
+                </p>
                 <div className="home-btn">
                   <a to="/register" id="neon-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target="_blank">
                     <button className="register-btn">Register</button>
