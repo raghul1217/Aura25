@@ -13,8 +13,40 @@ const Home = () => {
   const [showNotification, setShowNotification] = useState(false);
   const [userName, setUserName] = useState("");
   const [paymentStatus, setPaymentStatus] = useState(true);
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   const token = JSON.parse(localStorage.getItem("token"));
+
+  useEffect(() => {
+    // Countdown timer to March 13, 2026 12:00 PM
+    const targetDate = new Date("March 13, 2026 12:00:00").getTime();
+
+    const calculateTimeLeft = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    calculateTimeLeft();
+    const timerInterval = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timerInterval);
+  }, []);
 
   useEffect(() => {
     // Fetch user data to check payment status
@@ -117,21 +149,45 @@ const Home = () => {
                 <h1 id="home-head">Aura'25</h1>
                 <div className="home-date-container">
                   <h3 className="home-date s-home-date">Slated to happen on</h3>
-                  <h3 className="home-date">March - 01 & 02 - 2025</h3>
+                  <h3 className="home-date">March - 14 & 15 - 2026</h3>
                 </div>
                 <p>
-                  <span>“AURA '25”</span>, the most awaited intercollegiate fest
+                  <span>"AURA '25"</span>, the most awaited intercollegiate fest
                   conducted by 'Government College of Engineering, Salem',
                   coordinated by the exuberant clubs of ours is here reflecting
                   it's aura like a magnetic field attracting all the energetic
                   crowds with lively performances. Buckle up for an overall
                   atmosphere of joy and celebration!!
                 </p>
+                <div className="countdown-container">
+                  <h3 className="countdown-title">Hurry Up! Registration closes in</h3>
+                  <div className="countdown-timer">
+                    <div className="countdown-item">
+                      <span className="countdown-value">{timeLeft.days}</span>
+                      <span className="countdown-label">Days</span>
+                    </div>
+                    <div className="countdown-separator">:</div>
+                    <div className="countdown-item">
+                      <span className="countdown-value">{timeLeft.hours}</span>
+                      <span className="countdown-label">Hours</span>
+                    </div>
+                    <div className="countdown-separator">:</div>
+                    <div className="countdown-item">
+                      <span className="countdown-value">{timeLeft.minutes}</span>
+                      <span className="countdown-label">Minutes</span>
+                    </div>
+                    <div className="countdown-separator">:</div>
+                    <div className="countdown-item">
+                      <span className="countdown-value">{timeLeft.seconds}</span>
+                      <span className="countdown-label">Seconds</span>
+                    </div>
+                  </div>
+                </div>
                 <div className="home-btn">
                   <a to="/register" id="neon-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target="_blank">
                     <button className="register-btn">Register</button>
                   </a>
-                  <p>Registration closes on 27th march 12pm.</p>
+                  <p>Registration closes on 13th march 12pm.</p>
                   <p>Event access per head - ₹180/-</p>
                 </div>
               </div>

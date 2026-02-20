@@ -63,17 +63,16 @@ const ImageCarousel = () => {
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </button>
-
-          {/* Indicators */}
-          <div className="carousel-indicators">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                className={`indicator ${index === currentIndex ? 'active' : ''}`}
-                onClick={() => goToSlide(index)}
-              />
-            ))}
-          </div>
+        </div>
+        {/* Indicators positioned outside the carousel */}
+        <div className="carousel-indicators">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`indicator ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => goToSlide(index)}
+            />
+          ))}
         </div>
       </div>
     </div>

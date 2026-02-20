@@ -33,22 +33,37 @@
   padding: 20px;
   margin: 20px 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel {
-  position: relative;
   width: 100%;
-  height: 500px;
+  height: 480px; /* Reduced height to account for indicators */
   overflow: hidden;
+  border-radius: 25px 5px 25px 5px; /* Modern asymmetrical border: big-small-big-small */
+  position: relative;
+  z-index: 5; /* Ensure carousel is behind indicators if needed */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Move shadow to carousel */
+  border-width: 12px 4px 12px 4px; /* Thicker borders for more prominent frame look */
+  border-style: solid;
+  border-color: var(--primary); /* Orange border/frame to match theme */
+}
+
+.carousel-with-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel-slide {
@@ -90,6 +105,18 @@
   transition: all 0.3s ease;
 }
 
+/* Ensure carousel slide is positioned properly */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 1; /* Lower z-index than arrows */
+}
+
 .carousel-arrow:hover {
   background: var(--primary);
   transform: translateY(-50%) scale(1.1);
@@ -104,18 +131,20 @@
 }
 
 .carousel-indicators {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  gap: 10px;
-  z-index: 10;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 15px; /* Add margin to separate from carousel */
+  padding: 10px;
+  width: 100%;
+  background: transparent; /* Remove background to make it clearly separate */
+  z-index: 20; /* Ensure indicators are above other elements */
+  position: relative; /* Ensure z-index takes effect */
 }
 
 .indicator {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border: none;
   background: rgba(255, 255, 255, 0.5);

@@ -198,6 +198,101 @@ font-family: "space mono", sans-serif;
     font-weight: 600;
 }
 
+/* Countdown Timer Styles */
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 126, 0, 0.05), rgba(255, 126, 0, 0.1));
+    border-radius: 15px;
+    border: 1px solid rgba(255, 126, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(255, 126, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 600px;
+}
+
+.countdown-title {
+    font-family: "Playwrite CU", serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--secondary);
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.countdown-timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, var(--primary), #ff9500);
+    padding: 12px 18px;
+    border-radius: 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 15px rgba(255, 126, 0, 0.4),
+                inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 126, 0, 0.6),
+                inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.countdown-value {
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-label {
+    font-family: "Playwrite AU SA", serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.countdown-separator {
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 5px;
+    animation: pulse-separator 1s ease-in-out infinite;
+}
+
+@keyframes pulse-separator {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
 /* Neon glow effect for the register button */
 /* Updated Space-themed Button */
 .register-btn {
@@ -448,5 +543,39 @@ font-family: "space mono", sans-serif;
 
     .home-bg{
         height: 120vh;
+    }
+
+    /* Countdown Timer Mobile Styles */
+    .countdown-container {
+        padding: 15px;
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .countdown-title {
+        font-size: 16px;
+    }
+
+    .countdown-timer {
+        gap: 6px;
+    }
+
+    .countdown-item {
+        padding: 8px 12px;
+        min-width: 55px;
+        border-radius: 8px;
+    }
+
+    .countdown-value {
+        font-size: 22px;
+    }
+
+    .countdown-label {
+        font-size: 9px;
+    }
+
+    .countdown-separator {
+        font-size: 20px;
+        margin: 0 3px;
     }
 }
