@@ -547,35 +547,36 @@ font-family: "space mono", sans-serif;
 
     /* Countdown Timer Mobile Styles */
     .countdown-container {
-        padding: 15px;
-        gap: 12px;
+        padding: 12px 8px;
+        gap: 10px;
         max-width: 100%;
     }
 
     .countdown-title {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .countdown-timer {
-        gap: 6px;
+        gap: 4px;
+        flex-wrap: nowrap;
     }
 
     .countdown-item {
-        padding: 8px 12px;
-        min-width: 55px;
-        border-radius: 8px;
+        padding: 6px 8px;
+        min-width: 45px;
+        border-radius: 6px;
     }
 
     .countdown-value {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .countdown-label {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .countdown-separator {
-        font-size: 20px;
-        margin: 0 3px;
+        font-size: 16px;
+        margin: 0 2px;
     }
 }
