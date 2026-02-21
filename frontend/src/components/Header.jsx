@@ -47,7 +47,7 @@ function Header() {
         <nav className="navbar">
           <div className="brand">
             <img src={aura} alt="" className="navbar-head-progeni" />
-            <span className="logo1">Aura'25</span>
+            <span className="logo1">Aura'26</span>
           </div>
           <div className="menu-icon" onClick={toggleMenu}>
             {menuOpen ? "\u2715" : "\u2630"}
