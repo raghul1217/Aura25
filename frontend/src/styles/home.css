@@ -419,8 +419,8 @@ font-family: "space mono", sans-serif;
     font-size: 70px;
     color: var(--primary);
     bottom: -150px;
-    animation: floating 12s ease-in-out infinite, glow-pulse 2s ease-in-out infinite, sway 3s ease-in-out infinite;
-    filter: drop-shadow(0 0 10px rgba(255, 126, 0, 0.5));
+    animation: floating 12s ease-in-out infinite;
+    will-change: transform;
   }
 
 
@@ -464,42 +464,27 @@ font-family: "space mono", sans-serif;
   
   @keyframes floating {
     0% { 
-      transform: translateY(0) rotate(0deg) scale(1); 
+      transform: translateY(0) rotate(0deg) scale(0.8) translateX(0); 
       opacity: 0;
-      filter: drop-shadow(0 0 5px rgba(255, 126, 0, 0.3));
     }
     10% {
       opacity: 1;
-      filter: drop-shadow(0 0 15px rgba(255, 126, 0, 0.6));
+    }
+    25% {
+      transform: translateY(-35vh) rotate(90deg) scale(1) translateX(20px);
+    }
+    50% {
+      transform: translateY(-70vh) rotate(180deg) scale(1.1) translateX(-20px);
+    }
+    75% {
+      transform: translateY(-105vh) rotate(270deg) scale(1.15) translateX(15px);
     }
     90% {
       opacity: 1;
-      filter: drop-shadow(0 0 15px rgba(255, 126, 0, 0.6));
     }
     100% { 
-      transform: translateY(-140vh) rotate(720deg) scale(1.2); 
+      transform: translateY(-140vh) rotate(360deg) scale(1.2) translateX(0); 
       opacity: 0;
-      filter: drop-shadow(0 0 25px rgba(255, 126, 0, 0.8));
-    }
-  }
-
-  @keyframes glow-pulse {
-    0%, 100% {
-      filter: drop-shadow(0 0 10px rgba(255, 126, 0, 0.5))
-              drop-shadow(0 0 20px rgba(255, 126, 0, 0.3));
-    }
-    50% {
-      filter: drop-shadow(0 0 20px rgba(255, 126, 0, 0.8))
-              drop-shadow(0 0 40px rgba(255, 126, 0, 0.5));
-    }
-  }
-
-  @keyframes sway {
-    0%, 100% {
-      margin-left: 0px;
-    }
-    50% {
-      margin-left: 30px;
     }
   }
   
@@ -509,8 +494,8 @@ font-family: "space mono", sans-serif;
         font-size: 35px;
         color: var(--primary);
         bottom: -150px;
-        animation: floating 12s ease-in-out infinite, glow-pulse 2s ease-in-out infinite, sway 3s ease-in-out infinite;
-        filter: drop-shadow(0 0 10px rgba(255, 126, 0, 0.5));
+        animation: floating 12s ease-in-out infinite;
+        will-change: transform;
       }
   }
 
