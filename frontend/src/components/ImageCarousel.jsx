@@ -43,26 +43,28 @@ const ImageCarousel = () => {
       </div>
       <div className="carousel-wrapper">
         <div className="carousel">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`carousel-slide ${index === currentIndex ? 'active' : ''}`}
-            >
-              <img src={image} alt={`Slide ${index + 1}`} />
-            </div>
-          ))}
+          <div className="carousel-inner">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className={`carousel-slide ${index === currentIndex ? 'active' : ''}`}
+              >
+                <img src={image} alt={`Slide ${index + 1}`} />
+              </div>
+            ))}
 
-          {/* Navigation arrows */}
-          <button className="carousel-arrow carousel-arrow-left" onClick={prevSlide}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button className="carousel-arrow carousel-arrow-right" onClick={nextSlide}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
+            {/* Navigation arrows */}
+            <button className="carousel-arrow carousel-arrow-left" onClick={prevSlide}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button className="carousel-arrow carousel-arrow-right" onClick={nextSlide}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
         </div>
         {/* Indicators positioned outside the carousel */}
         <div className="carousel-indicators">

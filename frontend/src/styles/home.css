@@ -312,10 +312,9 @@ font-family: "space mono", sans-serif;
     z-index: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
-    box-shadow: 0 0 25px rgba(255, 126, 0, 0.6),
-                0 0 50px rgba(255, 126, 0, 0.4),
-                0 0 75px rgba(255, 126, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 126, 0, 0.4);
     transition: all 0.4s ease-in-out;
+    animation: shine-effect 3s ease-in-out infinite;
 }
 
 .register-btn::before {
@@ -328,78 +327,53 @@ font-family: "space mono", sans-serif;
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.6),
         transparent
     );
-    transition: left 0.5s ease;
-    z-index: -1;
+    animation: shine-slide 3s ease-in-out infinite;
+    z-index: 1;
 }
 
-.register-btn:hover::before {
-    left: 100%;
+@keyframes shine-effect {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(255, 126, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 6px 25px rgba(255, 126, 0, 0.7);
+    }
 }
 
-.register-btn::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 0.3) 0%,
-        transparent 70%
-    );
-    opacity: 0;
-    transform: scale(0.5);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    z-index: -1;
-}
-
-.register-btn:hover::after {
-    opacity: 1;
-    transform: scale(1);
+@keyframes shine-slide {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
 }
 
 .register-btn:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 10px 40px rgba(255, 126, 0, 0.8),
-                0 0 60px rgba(255, 126, 0, 0.6),
-                0 0 100px rgba(255, 126, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 126, 0, 0.6);
     border-color: rgba(255, 255, 255, 0.6);
     letter-spacing: 3px;
+    animation: shine-hover 3s ease-in-out infinite;
 }
 
-.register-btn:active {
-    transform: translateY(-2px) scale(1.02);
+.register-btn:hover::before {
+    animation: shine-slide-hover 3s ease-in-out infinite;
 }
 
-/* Mobile-specific continuous shine animation */
-@media (hover: none) and (pointer: coarse) {
-    .register-btn {
-        animation: mobile-shine 2.5s ease-in-out infinite;
-    }
-
-    .register-btn::before {
-        animation: mobile-shine-slide 2s ease-in-out infinite;
-    }
-}
-
-@keyframes mobile-shine {
+@keyframes shine-hover {
     0%, 100% {
-        box-shadow: 0 0 25px rgba(255, 126, 0, 0.6),
-                    0 0 50px rgba(255, 126, 0, 0.4),
-                    0 0 75px rgba(255, 126, 0, 0.2);
+        box-shadow: 0 6px 20px rgba(255, 126, 0, 0.6);
     }
     50% {
-        box-shadow: 0 0 35px rgba(255, 126, 0, 0.9),
-                    0 0 70px rgba(255, 126, 0, 0.6),
-                    0 0 105px rgba(255, 126, 0, 0.4);
+        box-shadow: 0 8px 30px rgba(255, 126, 0, 0.9);
     }
 }
 
-@keyframes mobile-shine-slide {
+@keyframes shine-slide-hover {
     0% {
         left: -100%;
     }

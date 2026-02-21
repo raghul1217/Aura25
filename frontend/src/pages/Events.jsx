@@ -26,14 +26,45 @@ const Events = () => {
           logo: dance,
         },
         {
-          title: "பேச்சுப்போட்டி",
+          title: "Resonix",
           content:
-            "அறிவு ஆயுதம் கொண்டு, தலைப்பிலிருந்து விலகாமல் வாய்மொழியும் கருத்துகளில் கேட்பவர்கள் நெஞ்சை வசப்படுத்தும் போட்டி",
+            "Solo instrumental performance showcasing musical talent, rhythm, and creativity.",
+          logo: music,
+        },
+        {
+          title: "Spill Art",
+          content:
+            "Artists creating unique designs by pouring and manipulating colors on canvas.",
+          logo: arts,
+        },
+        {
+          title: "Pencil Sketch",
+          content:
+            "Artists creating lively black and white pictures using graphite pencils.",
+          logo: arts,
+        },
+        {
+          title: "தேன்கவி",
+          content:
+            "சொற்களால் சித்திரம் வரைந்து, சிந்தையை வருடும் கவிதைகள் புனையும் நிகழ்வு.",
           logo: tamil,
           class: "tamiltext",
         },
         {
-          title: "Poem Writing",
+          title: "சொற்சிலம்பம்",
+          content:
+            "அறிவு ஆயுதம் கொண்டு, தலைப்பிலிருந்து விலகாமல் வாய்மொழியும் கருத்துகளில் கேட்பவர்கள் நெஞ்சை வசப்படுத்தும் போட்டி",
+          logo: tamil,
+          class: "tamiltext",
+        },
+        {
+          title: "Paper Craft",
+          content:
+            "Creating artistic designs and structures using paper and minimal materials.",
+          logo: arts,
+        },
+        {
+          title: "Word Waves",
           content:
             "Participants writing poems inspired by given pictures, showcasing creativity and emotional expression.",
           logo: english,
@@ -41,14 +72,14 @@ const Events = () => {
         {
           title: "Monologue",
           content:
-            "Solo performer delivering a character's emotions, thoughts, or story, showcasing acting skills and expression.",
+            "Solo performer delivering a character's emotions, thoughts, or story, showcasing acting skills and expression.",
           logo: film,
         },
         {
-          title: "Pencil Sketching",
+          title: "Verse Craft",
           content:
-            "Artists creating lively black and white pictures using graphite pencils.",
-          logo: arts,
+            "Crafting verses with creativity and emotion, showcasing poetic skills.",
+          logo: english,
         },
       ],
     },
@@ -56,35 +87,23 @@ const Events = () => {
       category: "Duo Events",
       events: [
         {
-          title: "Meloduet",
+          title: "Melo Duet",
           content:
             "Two singers performing together, showcasing coordination, vocal blending, and emotional expression.",
           logo: music,
+        },
+        {
+          title: "தமிழ்க்களம்",
+          content:
+            "தமிழனின் வரலாறு, இலக்கணம், இலக்கியம், பண்பாடு, கலாச்சாரம் என்று நம் பெருமைகளை நினைவு கூர்ந்து விடையளிக்கும் போட்டி.",
+          logo: tamil,
+          class: "tamiltext",
         },
         {
           title: "Dynamic Duo",
           content:
             "Two dancers performing together, highlighting coordination, chemistry, and synchronization.",
           logo: dance,
-        },
-        {
-          title: "தமிழ் வினாடி வினா",
-          content:
-            "தமிழனின் வரலாறு, இலக்கணம், இலக்கியம், பண்பாடு, கலாச்சாரம் என்று நம் பெருமைகளை நினைவு கூர்ந்து விடையளிக்கும் போட்டி.",
-          logo: tamil,
-          class: "tamiltext",
-        },
-        {
-          title: "English Quiz",
-          content:
-            " Competitors testing linguistic skills and knowledge, showcasing expertise and speed.",
-          logo: english,
-        },
-        {
-          title: "Face Painting",
-          content:
-            "Artists creating temporary, vibrant designs on participants' hands or faces.",
-          logo: arts,
         },
       ],
     },
@@ -104,42 +123,16 @@ const Events = () => {
           logo: dance,
         },
         {
-          title: "வீதி நாடகம்",
-          content:
-            "நாட்டுக்குத் தேவையான நற்கருத்துகள், எளிய நடையிலும் உண்மையான பாடல்களிலும் நவரசம் கலந்த வீதி நாடகம்.",
-          logo: tamil,
-          class: "tamiltext",
-        },
-        {
-          title: "வில்லுப்பாட்டு",
-          content:
-            "கேளாத செவிகளையும் கேட்க வைத்து, வர்ண மெட்டுகளில் நம் மனதை வருடும் தேனிசை வில்லுப்பாட்டு.",
-          logo: tamil,
-          class: "tamiltext",
-        },
-        {
-          title: "Short Film",
-          content:
-            "Creators producing impactful, engaging short films showcasing storytelling and visuals.",
-          logo: film,
-        },
-        {
           title: "Scene Recreation",
           content:
             "Teams recreating iconic movie scenes, capturing emotions, cinematography, and essence.",
           logo: film,
         },
         {
-          title: "Adzap",
+          title: "Short Film",
           content:
-            "Teams creating and acting out imaginative ads, testing creativity, teamwork, and quick thinking.",
-          logo: english,
-        },
-        {
-          title: "Paper Dressing",
-          content:
-            "Teams designing and creating stylish outfits using paper and minimal materials.",
-          logo: arts,
+            "Creators producing impactful, engaging short films showcasing storytelling and visuals.",
+          logo: film,
         },
       ],
     },
