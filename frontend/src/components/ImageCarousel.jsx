@@ -39,7 +39,7 @@ const ImageCarousel = () => {
   return (
     <div className="carousel-container" id='gallery'>
       <div className="memorable-moments">
-        <h2 className="events-head">Aura25 Moments</h2>
+        <h2 className="events-head" id='auramoments'>Aura25 Moments</h2>
       </div>
       <div className="carousel-wrapper">
         <div className="carousel">

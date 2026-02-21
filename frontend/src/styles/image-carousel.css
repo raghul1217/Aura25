@@ -195,11 +195,15 @@
 
 @media (max-width: 480px) {
   .carousel {
-    height: 250px;
+    height: 240px;
   }
   
   .carousel-arrow {
     width: 35px;
     height: 35px;
+  }
+
+  .auramoments{
+      font-size: 22px;
   }
 }

@@ -111,12 +111,12 @@ const Footer = () => {
       </div>
 
       {/* Footer bottom text */}
-      {/* <div className="footer-bottom">
+      <div className="footer-bottom">
         <hr />
-        <p className='footer-p'>Designed & Developed by <a href="https://renderspark.vercel.app/" target="_blank" rel="noopener noreferrer">Renderspark.</a></p>
+        <p className='footer-p'>@aura2026. All Right Reserved.</p>
 
-      </div> */}
-    </footer>
+      </div>
+    </footer> 
   );
 };
 
