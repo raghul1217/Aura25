@@ -320,3 +320,24 @@ h2 {
   font-size: 14px;
   font-weight: 500;
 }
+
+/* Rulebook button styling */
+.rulebook-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%) translate3d(0, 0, 26px);
+  padding: 8px 20px;
+  font-size: 14px;
+  z-index: 30;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rulebook-btn:hover {
+  transform: translateX(-50%) translate3d(0, -2px, 26px);
+}
+
+.card:hover .rulebook-btn {
+  transform: translateX(-50%) translate3d(0, 0, 50px);
+}
