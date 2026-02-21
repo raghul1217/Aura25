@@ -18,80 +18,43 @@ const Footer = () => {
               <div className="align1">
               <i class="fas fa-phone"></i>
               <p>
-                Gowtham Mugesh S
+                Monesh S
               </p>
               </div>
               <div className="align2">
-              <p>: 8148015889</p>
+              <p>: 7558140276</p>
               </div>
             </div>
 
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Kasthuri J</p>
+              <p>Jeevitha S</p>
               </div>
               <div className="align2">
-              <p>: 6379112737</p>
+              <p>: 8248792858</p>
               </div>
             </div>
 
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Saravanan Srikanth S M</p>
+              <p>Poovarasan S</p>
               </div>
               <div className="align2">
-              <p>: 6381003112</p>
+              <p>: 7449021897</p>
               </div>
             </div>
 
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Poojashree S</p>
+              <p>Pooja Sri S</p>
               </div>
               <div className="align2">
-              <p>: 6379269913</p>
+              <p>: 9363259281</p>
               </div>
             </div>
-            <div className="people-contact">
-              <div className="align1">
-              <i class="fas fa-phone"></i>
-              <p>Arpudha A K</p>
-              </div>
-              <div className="align2">
-              <p>: 9952390749</p>
-              </div>
-            </div>
-            <div className="people-contact">
-              <div className="align1">
-              <i class="fas fa-phone"></i>
-              <p>Durai Arasan T</p>
-              </div>
-              <div className="align2">
-              <p>: 9025051418</p>
-              </div>
-            </div>
-            <div className="people-contact">
-              <div className="align1">
-              <i class="fas fa-phone"></i>
-              <p>Gokulakrishnan R</p>
-              </div>
-              <div className="align2">
-              <p>: 9363184485</p>
-              </div>
-            </div>
-            <div className="people-contact">
-              <div className="align1">
-              <i class="fas fa-phone"></i>
-              <p>Manikandan P</p>
-              </div>
-              <div className="align2">
-              <p>: 7825938625</p>
-              </div>
-            </div>
-
           </div>
 
           <div className="social-icons">
@@ -120,7 +83,6 @@ const Footer = () => {
             <li><a to="#home">Home</a></li>
             <li><a href="#clubs" >Clubs</a></li>
             <li><a href="#events" >Events</a></li>
-            <li><a href="#gallery" >Aura25 moments</a></li>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target='_blank'>Register</a></li>
             <li><a href="https://drive.google.com/drive/folders/10rg6bsXhj8f7FAUODSHTb_Nil_ho9SYz" target='_blank'>Rulebook</a></li>
           </ul>

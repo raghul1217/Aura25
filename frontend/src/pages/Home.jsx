@@ -196,7 +196,8 @@ Two days. Infinite memories 💃🎤</h3>
                   >
                     <button className="register-btn">Register</button>
                   </a>
-                  <p>Registration closes on 10th March 2026</p>
+                  <p>Event access per head - Rs149/-</p>
+                  <p>Registration closes on 10th March 2026</p> 
                   <p>
                     A multi-day intercollege cultural fest celebrating music,
                     dance, arts, literature, and creativity. Two days. Infinite
