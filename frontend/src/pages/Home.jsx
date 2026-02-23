@@ -8,6 +8,8 @@ import Header from "../components/Header";
 import { FaTimes } from "react-icons/fa";
 import Clubs from "../components/Clubs";
 import ImageCarousel from "../components/ImageCarousel";
+import SecretarImages from "../components/SecretarImages";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [number, setNumber] = useState(20);
   const [showNotification, setShowNotification] = useState(false);
@@ -191,18 +193,15 @@ Two days. Infinite memories 💃🎤</h3>
                   <a
                     to="/register"
                     id="neon-btn"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform"
+                    href="https://forms.gle/1kQK3Z8bs8fXR4dS7"
                     target="_blank"
                   >
                     <button className="register-btn">Register</button>
-                  </a>
-                  <p>Event access per head - Rs149/-</p>
-                  <p>Registration closes on 10th March 2026</p> 
-                  {/* <p>
-                    A multi-day intercollege cultural fest celebrating music,
-                    dance, arts, literature, and creativity. Two days. Infinite
-                    memories 💃🎤
-                  </p> */}
+                  </a> 
+                  <p>Plan-1: ₹149 per head – Access to all events</p>
+                  <p>Plan-2: ₹99 per head – Access to all solo events</p>
+                  <p>Accommodation: ₹50 per head (Excluding food)</p>
+                  <p>Registration closes on 10th March 2026</p>
                 </div>
               </div>
               <div className="home-content2">
@@ -236,6 +235,7 @@ Two days. Infinite memories 💃🎤</h3>
       <Clubs />
       <ImageCarousel />
       <Events />
+      <SecretarImages />
       <Footer />
     </>
   );

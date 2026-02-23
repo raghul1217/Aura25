@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import corousel1 from '../assets/corousel1.jpg.jpeg';
-import corousel2 from '../assets/corousel2.jpg.jpeg';
+import carouselimg1 from '../assets/carouselimg1.jpeg';
+import carouselimg2 from '../assets/carouselimg2.jpeg';
+import carouselimg3 from '../assets/carouselimg3.jpeg';
+import carouselimg4 from '../assets/carouselimg4.jpeg';
+import carouselimg5 from '../assets/carouselimg5.jpeg';
 import '../styles/image-carousel.css';
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   // Array of images
   const images = [
-    corousel1,
-    corousel2
+    carouselimg1,
+    carouselimg2,
+    carouselimg3,
+    carouselimg4,
+    carouselimg5
   ];
 
   // Auto slide functionality
