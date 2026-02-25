@@ -543,6 +543,10 @@ font-family: "space mono", sans-serif;
         width: 100%;
     }
 
+    .home-btn p {
+        font-size: 12px;
+    }
+
     .register-btn {
         border-radius: 40px;
         padding: 12px 35px;
