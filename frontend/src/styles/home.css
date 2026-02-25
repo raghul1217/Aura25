@@ -506,7 +506,7 @@ font-family: "space mono", sans-serif;
         justify-content: center;
         align-items: center;
         min-height: 100vh; 
-        padding: 20px 6px;
+        padding: 20px 12px;
         width: 100%;
     }
 
@@ -544,7 +544,7 @@ font-family: "space mono", sans-serif;
     }
 
     .home-btn p {
-        font-size: 15px;
+        font-size: 14px;
         width: 100%;
     }
 
