@@ -1,13 +1,16 @@
 import React from "react";
-import dummy from "../assets/dummy.jpeg";
+import Monesh from "../assets/Monesh.jpeg";
+import Jeevitha from "../assets/Jeevitha.jpeg";
+import Poovarasan from "../assets/Poovarasan.jpeg";
+import Poojasri from "../assets/Poojasri.jpeg";
 import "../styles/secretary.css";
 
 const SecretarImages = () => {
   const secretaries = [
-    { club: "Music", name: "Monesh S", photo: dummy },
-    { club: "Music", name: "Jeevitha P", photo: dummy },
-    { club: "Dance", name: "Poovarasan S", photo: dummy },
-    { club: "Dance", name: "Poojasri S", photo: dummy },
+    { club: "Music", name: "Monesh S", photo: Monesh },
+    { club: "Music", name: "Jeevitha P", photo: Jeevitha },
+    { club: "Dance", name: "Poovarasan S", photo: Poovarasan },
+    { club: "Dance", name: "Poojasri S", photo: Poojasri },
   ];
 
   return (
