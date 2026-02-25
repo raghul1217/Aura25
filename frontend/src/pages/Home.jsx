@@ -201,7 +201,7 @@ Two days. Infinite memories 💃🎤</h3>
                   <p>Plan-1: ₹149 per head – Access to all events</p>
                   <p>Plan-2: ₹99 per head – Access to all solo events</p>
                   <p>Accommodation: ₹50 per head (Excluding food)</p>
-                  <p>Registration closes on 10th March 2026</p>
+                  <p>Registration closes on 11th March 2026</p>
                 </div>
               </div>
               <div className="home-content2">
