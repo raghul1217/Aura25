@@ -18,41 +18,31 @@ const Footer = () => {
               <div className="align1">
               <i class="fas fa-phone"></i>
               <p>
-                Monesh S
+                Yalzhini
               </p>
               </div>
               <div className="align2">
-              <p>: 7558140276</p>
+              <p>: 6383622722</p>
               </div>
             </div>
 
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Jeevitha S</p>
+              <p>Abirami</p>
               </div>
               <div className="align2">
-              <p>: 8248792858</p>
+              <p>: 74182 55174</p>
               </div>
             </div>
 
             <div className="people-contact">
               <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Poovarasan S</p>
+              <p>Vignesh</p>
               </div>
               <div className="align2">
-              <p>: 7449021897</p>
-              </div>
-            </div>
-
-            <div className="people-contact">
-              <div className="align1">
-              <i class="fas fa-phone"></i>
-              <p>Pooja Sri S</p>
-              </div>
-              <div className="align2">
-              <p>: 9363259281</p>
+              <p>: 90472 15857</p>
               </div>
             </div>
           </div>
