@@ -73,7 +73,7 @@ const Footer = () => {
             <li><a to="#home">Home</a></li>
             <li><a href="#clubs" >Clubs</a></li>
             <li><a href="#events" >Events</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2pJ-8mqd92tvxI4Dv_883YsJ38sFp7gvHqko7W4XMFmJUzg/viewform" target='_blank'>Register</a></li>
+            <li><a href="https://forms.gle/1kQK3Z8bs8fXR4dS7" target='_blank'>Register</a></li>
             <li><a href="https://drive.google.com/drive/folders/10rg6bsXhj8f7FAUODSHTb_Nil_ho9SYz" target='_blank'>Rulebook</a></li>
           </ul>
         </div>
