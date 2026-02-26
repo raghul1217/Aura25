@@ -197,9 +197,27 @@ Two days. Infinite memories 💃🎤</h3>
                     target="_blank"
                   >
                     <button className="register-btn">Register</button>
-                  </a> 
-                  
+                  </a>
+
                   <p>Registration closes on 11th March 2026</p>
+                </div>
+
+                {/* Cash Prize Highlight */}
+                <div className="cash-prize-section">
+                  <div className="prize-stack">
+                    <div className="money-layer layer-1"></div>
+                    <div className="money-layer layer-2"></div>
+                    <div className="money-layer layer-3"></div>
+                    <div className="prize-card">
+                      <div className="prize-border"></div>
+                      <div className="prize-content">
+                        <span className="prize-heading">CASH PRIZE POOL</span>
+                        <span className="prize-value">₹50,000</span>
+                        <div className="prize-line"></div>
+                        <span className="prize-note">For Winners</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="home-content2">
