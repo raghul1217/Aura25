@@ -50,7 +50,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 15px;
   width: 100%;
   padding: 0px 50px;
   font-family: "Playwrite AU SA", serif;
@@ -65,28 +66,34 @@
 
 /* Contact numbers and social icons alignment */
 .contact-numbers {
-  width: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .people-contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   font-size: 15px;
   margin: 8px 0;
+  gap: 10px;
 }
 
 .people-contact .align1 {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   align-items: center;
-  flex: 2;
+}
+
+.people-contact .align1 i {
+  color: var(--primary);
+  font-size: 16px;
 }
 
 .people-contact .align2 {
   display: flex;
-  flex: 1;
-  justify-content: flex-end;
 }
 
 .social-icons {
@@ -197,6 +204,8 @@
   .left-side{
     width: 100%;
     padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
   }
 
   .social-icons {
@@ -224,20 +233,20 @@
 
   .contact-numbers{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .people-contact .align1{
-    flex: 2;
-  }
-
-  .people-contact .align2{
-    flex: 1;
-    justify-content: flex-end;
+  .people-contact {
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
   }
 
   .people-contact p{
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 

@@ -322,16 +322,26 @@ h2 {
 }
 
 /* Rulebook button styling */
-.rulebook-btn {
+.custom-btn.rulebook-btn {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 26px);
-  padding: 8px 20px;
+  padding: 10px 20px !important;
+  height: 38px !important;
+  line-height: normal !important;
   font-size: 14px;
   z-index: 30;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+}
+
+.custom-btn.rulebook-btn .logout-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .rulebook-btn:hover {

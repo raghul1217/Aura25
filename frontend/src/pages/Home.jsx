@@ -25,8 +25,8 @@ const Home = () => {
   const token = JSON.parse(localStorage.getItem("token"));
 
   useEffect(() => {
-    // Countdown timer to March 13, 2026 12:00 PM
-    const targetDate = new Date("March 13, 2026 12:00:00").getTime();
+    // Countdown timer to March 14, 2026 12:00 PM
+    const targetDate = new Date("March 14, 2026 12:00:00").getTime();
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
@@ -198,9 +198,7 @@ Two days. Infinite memories 💃🎤</h3>
                   >
                     <button className="register-btn">Register</button>
                   </a> 
-                  <p>Plan-1: ₹149 per head – Access to all events</p>
-                  <p>Plan-2: ₹99 per head – Access to all solo events</p>
-                  <p>Accommodation: ₹50 per head (Excluding food)</p>
+                  
                   <p>Registration closes on 11th March 2026</p>
                 </div>
               </div>
