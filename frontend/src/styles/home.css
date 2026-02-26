@@ -187,10 +187,12 @@ font-family: "space mono", sans-serif;
     margin-bottom: 10px;
 }
 
-.home-btn p{
-    font-family: "Playwrite CU", serif;
+.home-btn .register-note{
     font-family: "Playwrite AU SA", serif;
     font-weight: 600;
+    font-size: 14px;
+    color: var(--secondary);
+    letter-spacing: 0.5px;
 }
 
 /* Cash Prize Section - Money Stack Design */
@@ -199,7 +201,7 @@ font-family: "space mono", sans-serif;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .prize-stack {
@@ -216,7 +218,7 @@ font-family: "space mono", sans-serif;
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #1a472a 100%);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
@@ -268,7 +270,7 @@ font-family: "space mono", sans-serif;
 
 .prize-card {
     position: relative;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    background: linear-gradient(135deg, #0d2818 0%, #1a472a 50%, #0d2818 100%);
     padding: 24px 48px;
     border-radius: 15px;
     text-align: center;
@@ -285,13 +287,13 @@ font-family: "space mono", sans-serif;
         box-shadow: 
             0 15px 40px rgba(0, 0, 0, 0.4),
             inset 0 2px 10px rgba(255, 255, 255, 0.1),
-            0 0 20px rgba(255, 126, 0, 0.3);
+            0 0 20px rgba(76, 175, 80, 0.3);
     }
     50% {
         box-shadow: 
             0 20px 50px rgba(0, 0, 0, 0.5),
             inset 0 2px 15px rgba(255, 255, 255, 0.15),
-            0 0 30px rgba(255, 126, 0, 0.5);
+            0 0 30px rgba(76, 175, 80, 0.5);
     }
 }
 
@@ -303,7 +305,7 @@ font-family: "space mono", sans-serif;
     bottom: 0;
     border: 2px solid transparent;
     border-radius: 15px;
-    background: linear-gradient(45deg, #FF7E00, #ff9500, #FF7E00) border-box;
+    background: linear-gradient(45deg, #4CAF50, #8BC34A, #4CAF50) border-box;
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -315,7 +317,7 @@ font-family: "space mono", sans-serif;
         filter: hue-rotate(0deg);
     }
     100% {
-        filter: hue-rotate(15deg);
+        filter: hue-rotate(20deg);
     }
 }
 
@@ -332,7 +334,7 @@ font-family: "space mono", sans-serif;
     font-family: "Space Grotesk", sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #FF7E00;
+    color: #8BC34A;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
@@ -341,28 +343,28 @@ font-family: "space mono", sans-serif;
     font-family: 'Russo One', 'lexend', 'sans-serif';
     font-size: 50px;
     font-weight: 700;
-    background: linear-gradient(180deg, #FFD700 0%, #FF7E00 60%, #ff6600 100%);
+    background: linear-gradient(180deg, #A8E063 0%, #56AB2F 60%, #2d5a3d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 3px 10px rgba(255, 126, 0, 0.5));
+    filter: drop-shadow(0 3px 10px rgba(76, 175, 80, 0.5));
     line-height: 1;
     animation: money-shine 2s ease-in-out infinite;
 }
 
 @keyframes money-shine {
     0%, 100% {
-        filter: drop-shadow(0 3px 10px rgba(255, 126, 0, 0.5));
+        filter: drop-shadow(0 3px 10px rgba(76, 175, 80, 0.5));
     }
     50% {
-        filter: drop-shadow(0 4px 15px rgba(255, 126, 0, 0.8));
+        filter: drop-shadow(0 4px 15px rgba(76, 175, 80, 0.8));
     }
 }
 
 .prize-line {
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #FF7E00, transparent);
+    background: linear-gradient(90deg, transparent, #4CAF50, transparent);
     border-radius: 2px;
     margin: 5px 0;
 }
@@ -371,7 +373,7 @@ font-family: "space mono", sans-serif;
     font-family: "Playwrite AU SA", serif;
     font-size: 11px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(139, 195, 74, 0.8);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -726,8 +728,8 @@ font-family: "space mono", sans-serif;
         width: 100%;
     }
 
-    .home-btn p {
-        font-size: 14px;
+    .home-btn .register-note {
+        font-size: 16px;
         width: 100%;
     }
 
@@ -763,11 +765,11 @@ font-family: "space mono", sans-serif;
     }
 
     .home-bg{
-        height: 120vh;
+        height: 125vh;
     }
 
     #rotating-section1 {
-        height: 120vh;
+        height: 125vh;
     }
 
     /* Countdown Timer Mobile Styles */
@@ -809,7 +811,7 @@ font-family: "space mono", sans-serif;
 
     /* Cash Prize Mobile Styles */
     .cash-prize-section {
-        margin-top: 15px;
+        margin-top: 0px;
     }
 
     .prize-stack {

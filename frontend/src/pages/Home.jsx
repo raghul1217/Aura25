@@ -161,6 +161,23 @@ const Home = () => {
 Two days. Infinite memories 💃🎤</h3>
                   <h3 className="home-date">March - 14 & 15 - 2026</h3>
                 </div> */}
+                {/* Cash Prize Highlight */}
+                <div className="cash-prize-section">
+                  <div className="prize-stack">
+                    <div className="money-layer layer-1"></div>
+                    <div className="money-layer layer-2"></div>
+                    <div className="money-layer layer-3"></div>
+                    <div className="prize-card">
+                      <div className="prize-border"></div>
+                      <div className="prize-content">
+                        <span className="prize-heading">CASH PRIZE POOL</span>
+                        <span className="prize-value">₹50,000</span>
+                        <div className="prize-line"></div>
+                        <span className="prize-note">For Winners</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="countdown-container">
                   <h3 className="countdown-title">March - 14 & 15 - 2026</h3>
                   <div className="countdown-timer">
@@ -199,26 +216,9 @@ Two days. Infinite memories 💃🎤</h3>
                     <button className="register-btn">Register</button>
                   </a>
 
-                  <p>Registration closes on 11th March 2026</p>
+                  <p className="register-note">Registration closes on 11th March 2026</p>
                 </div>
 
-                {/* Cash Prize Highlight */}
-                <div className="cash-prize-section">
-                  <div className="prize-stack">
-                    <div className="money-layer layer-1"></div>
-                    <div className="money-layer layer-2"></div>
-                    <div className="money-layer layer-3"></div>
-                    <div className="prize-card">
-                      <div className="prize-border"></div>
-                      <div className="prize-content">
-                        <span className="prize-heading">CASH PRIZE POOL</span>
-                        <span className="prize-value">₹50,000</span>
-                        <div className="prize-line"></div>
-                        <span className="prize-note">For Winners</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div className="home-content2">
                 <img src={aura} alt="" />
