@@ -4,6 +4,10 @@ import carouselimg2 from '../assets/carouselimg2.jpeg';
 import carouselimg3 from '../assets/carouselimg3.jpeg';
 import carouselimg4 from '../assets/carouselimg4.jpeg';
 import carouselimg5 from '../assets/carouselimg5.jpeg';
+import carouselimg6 from '../assets/carouselimg6.jpeg';
+import carouselimg7 from '../assets/carouselimg7.jpeg';
+import carouselimg8 from '../assets/carouselimg8.jpeg';
+import carouselimg9 from '../assets/carouselimg9.jpeg';
 import '../styles/image-carousel.css';
 
 const ImageCarousel = () => {
@@ -11,11 +15,15 @@ const ImageCarousel = () => {
 
   // Array of images
   const images = [
+    carouselimg7,
     carouselimg1,
     carouselimg2,
     carouselimg3,
     carouselimg4,
-    carouselimg5
+    carouselimg5,
+    carouselimg6,
+    carouselimg8,
+    carouselimg9
   ];
 
   // Auto slide functionality
