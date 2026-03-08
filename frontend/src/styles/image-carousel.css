@@ -197,7 +197,7 @@
   .carousel {
     height: 240px;
   }
-  
+
   .carousel-arrow {
     width: 35px;
     height: 35px;
@@ -205,5 +205,78 @@
 
   .auramoments{
       font-size: 22px;
+  }
+}
+
+/* About Aura24 Section Styles */
+.about-aura24-section {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 187, 0, 0.1) 0%, rgba(255, 140, 0, 0.1) 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 187, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-aura24-heading {
+  font-family: "Playwrite AU SA", serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-aura24-heading::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(45deg, #ffbb00 0%, #ff8c00 100%);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.about-aura24-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+  text-align: center;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .about-aura24-section {
+    padding: 20px;
+    margin: 30px auto 30px;
+  }
+
+  .about-aura24-heading {
+    font-size: 26px;
+  }
+
+  .about-aura24-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-aura24-section {
+    padding: 15px;
+    margin: 25px auto 40px;
+  }
+
+  .about-aura24-heading {
+    font-size: 22px;
+  }
+
+  .about-aura24-text {
+    font-size: 13px;
   }
 }

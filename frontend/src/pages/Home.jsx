@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import { FaTimes } from "react-icons/fa";
 import Clubs from "../components/Clubs";
 import ImageCarousel from "../components/ImageCarousel";
+import ImageCarousel24 from "../components/ImageCarousel24";
 import SecretarImages from "../components/SecretarImages";
 import { Link } from "react-router-dom";
 const Home = () => {
@@ -249,6 +250,7 @@ Two days. Infinite memories 💃🎤</h3>
         </div>
       )}
       <Clubs />
+      <ImageCarousel24 />
       <ImageCarousel />
       <Events />
       <SecretarImages />
