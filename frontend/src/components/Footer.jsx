@@ -74,7 +74,15 @@ const Footer = () => {
             <li><a href="#clubs" >Clubs</a></li>
             <li><a href="#events" >Events</a></li>
             <li><a href="https://forms.gle/1kQK3Z8bs8fXR4dS7" target='_blank'>Register</a></li>
-            <li><a href="https://drive.google.com/drive/folders/10rg6bsXhj8f7FAUODSHTb_Nil_ho9SYz" target='_blank'>Rulebook</a></li>
+            <li><a href="#" onClick={(e) => {
+              e.preventDefault();
+              const link = document.createElement("a");
+              link.href = "/rulebook.pdf";
+              link.download = "Rulebook.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}>Rulebook</a></li>
           </ul>
         </div>
 
